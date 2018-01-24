@@ -1,0 +1,472 @@
+EESchema Schematic File Version 2
+LIBS:lark-cache
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Lark power"
+Date ""
+Rev ""
+Comp "Tomas Hlavacek"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 J?
+U 1 1 5A65AC7C
+P 1700 1850
+F 0 "J?" H 1700 2000 50  0000 C CNN
+F 1 "CONN_01X02" V 1800 1850 50  0000 C CNN
+F 2 "" H 1700 1850 50  0001 C CNN
+F 3 "" H 1700 1850 50  0001 C CNN
+	1    1700 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L F_Small F?
+U 1 1 5A65AF0B
+P 2200 1800
+F 0 "F?" H 2160 1860 50  0000 L CNN
+F 1 "F_Small" H 2080 1740 50  0000 L CNN
+F 2 "" H 2200 1800 50  0000 C CNN
+F 3 "" H 2200 1800 50  0000 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FILTER FB?
+U 1 1 5A65AF3A
+P 3300 1800
+F 0 "FB?" H 3300 1950 50  0000 C CNN
+F 1 "FILTER" H 3300 1700 50  0000 C CNN
+F 2 "" H 3300 1800 50  0000 C CNN
+F 3 "" H 3300 1800 50  0000 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MBR0560 D?
+U 1 1 5A65B205
+P 2650 1800
+F 0 "D?" H 2650 1900 50  0000 C CNN
+F 1 "MBR0560" H 2650 1700 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 2650 1625 50  0001 C CNN
+F 3 "" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5A65B4F0
+P 4200 1800
+F 0 "#PWR?" H 4200 1650 50  0001 C CNN
+F 1 "+12V" H 4200 1940 50  0000 C CNN
+F 2 "" H 4200 1800 50  0000 C CNN
+F 3 "" H 4200 1800 50  0000 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A65B50C
+P 3800 2000
+F 0 "C?" H 3810 2070 50  0000 L CNN
+F 1 "CP" H 3810 1920 50  0000 L CNN
+F 2 "" H 3800 2000 50  0000 C CNN
+F 3 "" H 3800 2000 50  0000 C CNN
+	1    3800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A65B561
+P 4050 2000
+F 0 "C?" H 4060 2070 50  0000 L CNN
+F 1 "C" H 4060 1920 50  0000 L CNN
+F 2 "" H 4050 2000 50  0000 C CNN
+F 3 "" H 4050 2000 50  0000 C CNN
+	1    4050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A65B5B4
+P 1900 2550
+F 0 "#PWR?" H 1900 2300 50  0001 C CNN
+F 1 "GND" H 1900 2400 50  0000 C CNN
+F 2 "" H 1900 2550 50  0000 C CNN
+F 3 "" H 1900 2550 50  0000 C CNN
+	1    1900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1800 2100 1800
+Wire Wire Line
+	2300 1800 2500 1800
+Wire Wire Line
+	2800 1800 2950 1800
+Wire Wire Line
+	3650 1800 4650 1800
+Connection ~ 3800 1800
+Connection ~ 4050 1800
+Wire Wire Line
+	4050 1800 4050 1900
+Wire Wire Line
+	3800 1800 3800 1900
+Wire Wire Line
+	1900 1900 1900 2550
+Wire Wire Line
+	3800 2100 3800 2250
+Wire Wire Line
+	1900 2250 4050 2250
+Connection ~ 1900 2250
+Wire Wire Line
+	4050 2250 4050 2100
+Connection ~ 3800 2250
+$Comp
+L LM2675M-5 U?
+U 1 1 5A65EAD7
+P 2450 4450
+F 0 "U?" H 2050 4900 50  0000 L CNN
+F 1 "LM2675M-5" H 2050 4800 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2750 4100 50  0001 C CIN
+F 3 "" H 2450 4450 50  0001 C CNN
+	1    2450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5A65EBC9
+P 1650 4100
+F 0 "#PWR?" H 1650 3950 50  0001 C CNN
+F 1 "+12V" H 1650 4240 50  0000 C CNN
+F 2 "" H 1650 4100 50  0000 C CNN
+F 3 "" H 1650 4100 50  0000 C CNN
+	1    1650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4100 1650 4250
+Wire Wire Line
+	1650 4250 1950 4250
+$Comp
+L GND #PWR?
+U 1 1 5A65EC02
+P 2450 5250
+F 0 "#PWR?" H 2450 5000 50  0001 C CNN
+F 1 "GND" H 2450 5100 50  0000 C CNN
+F 2 "" H 2450 5250 50  0000 C CNN
+F 3 "" H 2450 5250 50  0000 C CNN
+	1    2450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4850 2450 5250
+$Comp
+L INDUCTOR L?
+U 1 1 5A65EC3D
+P 3550 4650
+F 0 "L?" H 3550 4750 50  0000 C CNN
+F 1 "47uH" H 3550 4600 50  0000 C CNN
+F 2 "" H 3550 4650 50  0001 C CNN
+F 3 "" H 3550 4650 50  0001 C CNN
+	1    3550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N5819 D?
+U 1 1 5A65EF47
+P 3300 4950
+F 0 "D?" H 3300 5050 50  0000 C CNN
+F 1 "SK33" H 3300 4850 50  0000 C CNN
+F 2 "" H 3300 4775 50  0001 C CNN
+F 3 "" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 5100 4100 5100
+Connection ~ 2450 5100
+Wire Wire Line
+	2950 4650 3300 4650
+Wire Wire Line
+	3300 4450 3300 4800
+Connection ~ 3300 4650
+$Comp
+L C C?
+U 1 1 5A65F414
+P 3150 4450
+F 0 "C?" H 3160 4520 50  0000 L CNN
+F 1 "C" H 3160 4370 50  0000 L CNN
+F 2 "" H 3150 4450 50  0000 C CNN
+F 3 "" H 3150 4450 50  0000 C CNN
+	1    3150 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 4450 3300 4450
+Wire Wire Line
+	2950 4450 3050 4450
+Wire Wire Line
+	2950 4250 3800 4250
+Wire Wire Line
+	3800 4250 3800 4850
+$Comp
+L +5V #PWR?
+U 1 1 5A65F505
+P 4100 4350
+F 0 "#PWR?" H 4100 4200 50  0001 C CNN
+F 1 "+5V" H 4100 4490 50  0000 C CNN
+F 2 "" H 4100 4350 50  0000 C CNN
+F 3 "" H 4100 4350 50  0000 C CNN
+	1    4100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A65F52D
+P 3800 4950
+F 0 "C?" H 3810 5020 50  0000 L CNN
+F 1 "CP" H 3810 4870 50  0000 L CNN
+F 2 "" H 3800 4950 50  0000 C CNN
+F 3 "" H 3800 4950 50  0000 C CNN
+	1    3800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A65F594
+P 4100 4950
+F 0 "C?" H 4110 5020 50  0000 L CNN
+F 1 "C" H 4110 4870 50  0000 L CNN
+F 2 "" H 4100 4950 50  0000 C CNN
+F 3 "" H 4100 4950 50  0000 C CNN
+	1    4100 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4650
+Wire Wire Line
+	3800 4650 4350 4650
+Wire Wire Line
+	4100 4350 4100 4850
+Connection ~ 4100 4650
+Wire Wire Line
+	3800 5100 3800 5050
+Connection ~ 3300 5100
+Wire Wire Line
+	4100 5100 4100 5050
+Connection ~ 3800 5100
+Text HLabel 4350 4650 2    60   Input ~ 0
+5VPWR
+$Comp
+L AZ1117-3.3 U?
+U 1 1 5A660AAD
+P 8300 1900
+F 0 "U?" H 8150 2025 50  0000 C CNN
+F 1 "AZ1117-3.3" H 8300 2025 50  0000 L CNN
+F 2 "" H 8300 2150 50  0001 C CIN
+F 3 "" H 8300 1900 50  0001 C CNN
+	1    8300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A660BC8
+P 7650 1700
+F 0 "#PWR?" H 7650 1550 50  0001 C CNN
+F 1 "+5V" H 7650 1840 50  0000 C CNN
+F 2 "" H 7650 1700 50  0000 C CNN
+F 3 "" H 7650 1700 50  0000 C CNN
+	1    7650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1700 7650 1900
+Wire Wire Line
+	7650 1900 8000 1900
+$Comp
+L GND #PWR?
+U 1 1 5A660C41
+P 8300 2500
+F 0 "#PWR?" H 8300 2250 50  0001 C CNN
+F 1 "GND" H 8300 2350 50  0000 C CNN
+F 2 "" H 8300 2500 50  0000 C CNN
+F 3 "" H 8300 2500 50  0000 C CNN
+	1    8300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2200 8300 2500
+$Comp
+L +3.3V #PWR?
+U 1 1 5A660CA2
+P 9300 1700
+F 0 "#PWR?" H 9300 1550 50  0001 C CNN
+F 1 "+3.3V" H 9300 1840 50  0000 C CNN
+F 2 "" H 9300 1700 50  0000 C CNN
+F 3 "" H 9300 1700 50  0000 C CNN
+	1    9300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1900 9600 1900
+Wire Wire Line
+	9300 1900 9300 1700
+$Comp
+L CP C?
+U 1 1 5A6611C4
+P 8700 2100
+F 0 "C?" H 8710 2170 50  0000 L CNN
+F 1 "CP" H 8710 2020 50  0000 L CNN
+F 2 "" H 8700 2100 50  0000 C CNN
+F 3 "" H 8700 2100 50  0000 C CNN
+	1    8700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A66121F
+P 8950 2100
+F 0 "C?" H 8960 2170 50  0000 L CNN
+F 1 "C" H 8960 2020 50  0000 L CNN
+F 2 "" H 8950 2100 50  0000 C CNN
+F 3 "" H 8950 2100 50  0000 C CNN
+	1    8950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2000 8700 1900
+Connection ~ 8700 1900
+Wire Wire Line
+	8950 2000 8950 1900
+Connection ~ 8950 1900
+Wire Wire Line
+	8700 2200 8700 2350
+Wire Wire Line
+	8300 2350 8950 2350
+Connection ~ 8300 2350
+Wire Wire Line
+	8950 2350 8950 2200
+Connection ~ 8700 2350
+Text HLabel 9600 1900 2    60   Input ~ 0
+33VPWR
+Connection ~ 9300 1900
+Text HLabel 4650 1800 2    60   Input ~ 0
+12VPWR
+Connection ~ 4200 1800
+$Comp
+L C C?
+U 1 1 5A6A29BA
+P 2900 2000
+F 0 "C?" H 2910 2070 50  0000 L CNN
+F 1 "C" H 2910 1920 50  0000 L CNN
+F 2 "" H 2900 2000 50  0000 C CNN
+F 3 "" H 2900 2000 50  0000 C CNN
+	1    2900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1900 2900 1800
+Connection ~ 2900 1800
+Wire Wire Line
+	2900 2100 2900 2250
+Connection ~ 2900 2250
+$EndSCHEMATC
