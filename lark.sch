@@ -744,19 +744,6 @@ Wire Wire Line
 	9900 5550 10150 5550
 Wire Wire Line
 	10150 5750 9900 5750
-Text GLabel 7100 3650 2    47   Input ~ 0
-GPS_PPS
-$Comp
-L R R?
-U 1 1 5A67F987
-P 6900 3650
-F 0 "R?" H 6930 3670 50  0000 L CNN
-F 1 "470" H 6930 3610 50  0000 L CNN
-F 2 "" H 6900 3650 50  0000 C CNN
-F 3 "" H 6900 3650 50  0000 C CNN
-	1    6900 3650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6700 1700 7050 1700
 Wire Wire Line
@@ -834,8 +821,6 @@ Wire Wire Line
 	2650 3900 2150 3900
 Wire Wire Line
 	2150 4100 2650 4100
-Wire Wire Line
-	7000 3650 7100 3650
 $Comp
 L R R?
 U 1 1 5A69AA53
