@@ -366,25 +366,6 @@ X R2OUT 9 -800 -700 200 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_AP1117-33
-#
-DEF Regulator_Linear_AP1117-33 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_AP1117-33" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 200 50 H I C CNN
-F3 "" 100 -250 50 H I C CNN
-ALIAS AP1117-18 AP1117-25 AP1117-33 AP1117-50 LD1117S33TR_SOT223 LD1117S12TR_SOT223 LD1117S18TR_SOT223 LD1117S25TR_SOT223 LD1117S50TR_SOT223 NCP1117-12_SOT223 NCP1117-1.5_SOT223 NCP1117-1.8_SOT223 NCP1117-2.0_SOT223 NCP1117-2.5_SOT223 NCP1117-2.85_SOT223 NCP1117-3.3_SOT223 NCP1117-5.0_SOT223 AMS1117-1.5 AMS1117-1.8 AMS1117-2.5 AMS1117-2.85 AMS1117-3.3 AMS1117-5.0
-$FPLIST
- SOT?223*TabPin2*
-$ENDFPLIST
-DRAW
-S -200 -200 200 75 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # Regulator_Switching_LM2596S-5
 #
 DEF Regulator_Switching_LM2596S-5 U 0 20 Y Y 1 F N
@@ -441,70 +422,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# bmx055_BMX055
+# lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks
 #
-DEF bmx055_BMX055 U 0 40 Y Y 1 F N
-F0 "U" 0 -950 50 H V C CNN
-F1 "bmx055_BMX055" 0 900 50 H V C CNN
-F2 "" 100 0 50 H I C CNN
-F3 "" 100 0 50 H I C CNN
-DRAW
-S -500 800 550 -850 0 1 0 f
-X INT2 1 -800 650 300 R 50 50 1 1 O
-X INT5 10 -800 -700 300 R 50 50 1 1 O
-X SDx 11 850 -700 300 L 50 50 1 1 B
-X SDO2 12 850 -550 300 L 50 50 1 1 O
-X VDDIO 13 850 -400 300 L 50 50 1 1 W
-X INT3 14 850 -250 300 L 50 50 1 1 B
-X INT4 15 850 -100 300 L 50 50 1 1 B
-X CSB1 16 850 50 300 L 50 50 1 1 I
-X SDO1 17 850 200 300 L 50 50 1 1 O
-X NC 18 850 350 300 L 50 50 1 1 N
-X INT1 19 850 500 300 L 50 50 1 1 O
-X DRDYM 2 -800 500 300 R 50 50 1 1 O
-X CSB3 20 850 650 300 L 50 50 1 1 I
-X VDD 3 -800 350 300 R 50 50 1 1 W
-X GNDA 4 -800 200 300 R 50 50 1 1 W
-X CSB2 5 -800 50 300 R 50 50 1 1 I
-X GNDIO 6 -800 -100 300 R 50 50 1 1 W
-X PS 7 -800 -250 300 R 50 50 1 1 I
-X NC 8 -800 -400 300 R 50 50 1 1 N
-X SCx 9 -800 -550 300 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# dk_Barrel-Audio-Connectors_SJ1-3523N
-#
-DEF dk_Barrel-Audio-Connectors_SJ1-3523N CON 0 0 N Y 1 F N
-F0 "CON" -300 250 60 H V L CNN
-F1 "dk_Barrel-Audio-Connectors_SJ1-3523N" -50 -250 60 H V C CNN
-F2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" 200 200 60 H I L CNN
-F3 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" 200 300 60 H I L CNN
-F4 "CP1-3523N-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SJ1-3523N" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
-F8 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN JACK STEREO 3.5MM R/A" 200 1000 60 H I L CNN "Description"
-F11 "CUI Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S 200 200 -300 -200 0 1 0 f
-P 4 0 1 0 200 0 100 0 50 -50 0 0 N
-P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
-P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
-X S 1 400 -100 200 L 50 50 1 1 P
-X T 2 400 0 200 L 50 50 1 1 P
-X R 3 400 100 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Modular-Connectors-Jacks_54602-908LF
-#
-DEF dk_Modular-Connectors-Jacks_54602-908LF J 0 40 Y Y 1 F N
+DEF lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks J 0 40 Y Y 1 F N
 F0 "J" -430 360 50 H V R CNN
-F1 "dk_Modular-Connectors-Jacks_54602-908LF" 50 -80 50 H V C CNN
+F1 "lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks" 50 -80 50 H V C CNN
 F2 "digikey-footprints:Ethernet_Jack_54602-908LF" 200 200 50 H I L CNN
 F3 "" 200 300 60 H I L CNN
 F4 "609-1046-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -545,35 +467,43 @@ X ~ 8 400 400 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT
+# lark-rescue_BMX055-bmx055
 #
-DEF dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT U 0 20 Y Y 1 F N
-F0 "U" 0 150 60 H V C CNN
-F1 "dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT" 0 250 60 H V C CNN
-F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
-F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 300 60 H I L CNN
-F4 "MCP1700T3302ETTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "MCP1700T-3302E/TT" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
-F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC REG LINEAR 3.3V 250MA SOT23-3" 200 1000 60 H I L CNN "Description"
-F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
+DEF lark-rescue_BMX055-bmx055 U 0 40 Y Y 1 F N
+F0 "U" 0 -950 50 H V C CNN
+F1 "lark-rescue_BMX055-bmx055" 0 900 50 H V C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
 DRAW
-S -200 100 200 -200 0 1 0 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X OUT 2 300 0 100 L 50 50 1 1 w
-X IN 3 -300 0 100 R 50 50 1 1 W
+S -500 800 550 -850 0 1 0 f
+X INT2 1 -800 650 300 R 50 50 1 1 O
+X INT5 10 -800 -700 300 R 50 50 1 1 O
+X SDx 11 850 -700 300 L 50 50 1 1 B
+X SDO2 12 850 -550 300 L 50 50 1 1 O
+X VDDIO 13 850 -400 300 L 50 50 1 1 W
+X INT3 14 850 -250 300 L 50 50 1 1 B
+X INT4 15 850 -100 300 L 50 50 1 1 B
+X CSB1 16 850 50 300 L 50 50 1 1 I
+X SDO1 17 850 200 300 L 50 50 1 1 O
+X NC 18 850 350 300 L 50 50 1 1 N
+X INT1 19 850 500 300 L 50 50 1 1 O
+X DRDYM 2 -800 500 300 R 50 50 1 1 O
+X CSB3 20 850 650 300 L 50 50 1 1 I
+X VDD 3 -800 350 300 R 50 50 1 1 W
+X GNDA 4 -800 200 300 R 50 50 1 1 W
+X CSB2 5 -800 50 300 R 50 50 1 1 I
+X GNDIO 6 -800 -100 300 R 50 50 1 1 W
+X PS 7 -800 -250 300 R 50 50 1 1 I
+X NC 8 -800 -400 300 R 50 50 1 1 N
+X SCx 9 -800 -550 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_RF-Transceiver-Modules_ESP32-WROOM-32
+# lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules
 #
-DEF dk_RF-Transceiver-Modules_ESP32-WROOM-32 MOD 0 40 Y Y 1 F N
+DEF lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules MOD 0 40 Y Y 1 F N
 F0 "MOD" -400 50 60 H V L CNN
-F1 "dk_RF-Transceiver-Modules_ESP32-WROOM-32" 200 -1000 60 V V C CNN
+F1 "lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules" 200 -1000 60 V V C CNN
 F2 "digikey-footprints:ESP32-WROOM-32D" 200 200 60 H I L CNN
 F3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" 200 300 60 H I L CNN
 F4 "1904-1010-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -629,11 +559,84 @@ X IO33 9 900 -1400 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# dk_USB-DVI-HDMI-Connectors_UE27AC54100
+# lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear
 #
-DEF dk_USB-DVI-HDMI-Connectors_UE27AC54100 J 0 40 Y Y 1 F N
+DEF lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
+F0 "U" 0 150 60 H V C CNN
+F1 "lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear" 0 250 60 H V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 300 60 H I L CNN
+F4 "MCP1700T3302ETTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP1700T-3302E/TT" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 3.3V 250MA SOT23-3" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 0 1 0 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X OUT 2 300 0 100 L 50 50 1 1 w
+X IN 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors
+#
+DEF lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors CON 0 0 N Y 1 F N
+F0 "CON" -300 250 60 H V L CNN
+F1 "lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors" -50 -250 60 H V C CNN
+F2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" 200 200 60 H I L CNN
+F3 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" 200 300 60 H I L CNN
+F4 "CP1-3523N-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SJ1-3523N" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
+F8 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN JACK STEREO 3.5MM R/A" 200 1000 60 H I L CNN "Description"
+F11 "CUI Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 200 200 -300 -200 0 1 0 f
+P 4 0 1 0 200 0 100 0 50 -50 0 0 N
+P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
+P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
+X S 1 400 -100 200 L 50 50 1 1 P
+X T 2 400 0 200 L 50 50 1 1 P
+X R 3 400 100 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# lark-rescue_TPS2511-tps2511
+#
+DEF lark-rescue_TPS2511-tps2511 U 0 40 Y Y 1 F N
+F0 "U" 0 500 50 H V C CNN
+F1 "lark-rescue_TPS2511-tps2511" 0 600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -450 400 -450 400 0 1 0 N
+S -450 400 450 -500 0 1 0 f
+X GND 1 -750 250 300 R 50 50 1 1 W
+X ILIM_SET 2 -750 50 300 R 50 50 1 1 I
+X IN 3 -750 -150 300 R 50 50 1 1 W
+X ~CS 4 -750 -350 300 R 50 50 1 1 W
+X EN 5 750 -350 300 L 50 50 1 1 I
+X DP 6 750 -150 300 L 50 50 1 1 O
+X DM 7 750 50 300 L 50 50 1 1 O
+X OUT 8 750 250 300 L 50 50 1 1 w
+X PAD 9 0 -800 300 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# lark-rescue_UE27AC54100-dk_USB-DVI-HDMI-Connectors
+#
+DEF lark-rescue_UE27AC54100-dk_USB-DVI-HDMI-Connectors J 0 40 Y Y 1 F N
 F0 "J" -50 375 60 H V C CNN
-F1 "dk_USB-DVI-HDMI-Connectors_UE27AC54100" -125 75 60 V V C CNN
+F1 "lark-rescue_UE27AC54100-dk_USB-DVI-HDMI-Connectors" -125 75 60 V V C CNN
 F2 "digikey-footprints:USB_A_Female_UE27AC54100" 200 200 60 H I L CNN
 F3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" 200 300 60 H I L CNN
 F4 "UE27AC54100-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -832,28 +835,6 @@ X CSB 5 400 -200 100 L 50 50 1 1 I
 X SDO 6 400 -100 100 L 50 50 1 1 O
 X SDI 7 400 0 100 L 50 50 1 1 I
 X SCLK 8 400 100 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# tps2511_TPS2511
-#
-DEF tps2511_TPS2511 U 0 40 Y Y 1 F N
-F0 "U" 0 500 50 H V C CNN
-F1 "tps2511_TPS2511" 0 600 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -450 400 -450 400 0 1 0 N
-S -450 400 450 -500 0 1 0 f
-X GND 1 -750 250 300 R 50 50 1 1 W
-X ILIM_SET 2 -750 50 300 R 50 50 1 1 I
-X IN 3 -750 -150 300 R 50 50 1 1 W
-X ~CS 4 -750 -350 300 R 50 50 1 1 W
-X EN 5 750 -350 300 L 50 50 1 1 I
-X DP 6 750 -150 300 L 50 50 1 1 O
-X DM 7 750 50 300 L 50 50 1 1 O
-X OUT 8 750 250 300 L 50 50 1 1 w
-X PAD 9 0 -800 300 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #

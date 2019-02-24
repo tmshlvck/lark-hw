@@ -55,9 +55,11 @@ F 4 "MAX3232ECDR" H 4800 2600 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Modular-Connectors-Jacks:54602-908LF J7
+L lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks J7
 U 1 1 5C6D6815
 P 9150 2050
+AR Path="/5C6D6815" Ref="J7"  Part="1" 
+AR Path="/5C549AF9/5C6D6815" Ref="J7"  Part="1" 
 F 0 "J7" V 9246 1595 50  0000 R CNN
 F 1 "54602-908LF" V 9155 1595 50  0000 R CNN
 F 2 "digikey-footprints:Ethernet_Jack_54602-908LF" H 9350 2250 50  0001 L CNN
@@ -75,9 +77,11 @@ F 12 "Active" H 9350 3250 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Modular-Connectors-Jacks:54602-908LF J8
+L lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks J8
 U 1 1 5C6D6947
 P 9150 3550
+AR Path="/5C6D6947" Ref="J8"  Part="1" 
+AR Path="/5C549AF9/5C6D6947" Ref="J8"  Part="1" 
 F 0 "J8" V 9246 3095 50  0000 R CNN
 F 1 "54602-908LF" V 9155 3095 50  0000 R CNN
 F 2 "digikey-footprints:Ethernet_Jack_54602-908LF" H 9350 3750 50  0001 L CNN
@@ -142,9 +146,11 @@ F 3 "~" H 5700 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Barrel-Audio-Connectors:SJ1-3523N CON1
+L lark-rescue:SJ1-3523N-dk_Barrel-Audio-Connectors CON1
 U 1 1 5C55B74E
 P 5600 6900
+AR Path="/5C55B74E" Ref="CON1"  Part="1" 
+AR Path="/5C549AF9/5C55B74E" Ref="CON1"  Part="1" 
 F 0 "CON1" H 5273 6953 60  0000 R CNN
 F 1 "SJ1-3523N" H 5273 6847 60  0000 R CNN
 F 2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" H 5800 7100 60  0001 L CNN
@@ -616,7 +622,7 @@ U 1 1 5C5BC765
 P 4500 5100
 F 0 "C46" H 4618 5146 50  0000 L CNN
 F 1 "470u" H 4618 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 4538 4950 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 4538 4950 50  0001 C CNN
 F 3 "~" H 4500 5100 50  0001 C CNN
 F 4 "493-16063-1-ND" H 4500 5100 50  0001 C CNN "MPN"
 	1    4500 5100

@@ -216,17 +216,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 4900 3500 4900
 Connection ~ 3500 4900
-Wire Wire Line
-	3500 4900 3500 5050
-Wire Wire Line
-	4450 4900 4500 4900
-Wire Wire Line
-	4500 4900 4500 5050
-Wire Wire Line
-	4500 5050 3500 5050
-Connection ~ 3500 5050
-Wire Wire Line
-	3500 5050 3500 5100
 NoConn ~ 4450 4800
 Wire Wire Line
 	3750 2550 3500 2550
@@ -237,34 +226,23 @@ Wire Wire Line
 Wire Wire Line
 	4500 2650 4450 2650
 Wire Wire Line
-	7800 5300 6250 5300
+	7800 5300 7100 5300
 Wire Wire Line
-	6250 5300 6250 4700
-Wire Wire Line
-	6250 4700 4450 4700
-Wire Wire Line
-	7800 5400 6150 5400
-Wire Wire Line
-	6150 5400 6150 4600
-Text HLabel 6150 4400 1    50   Input ~ 0
+	7800 5400 7000 5400
+Text HLabel 5400 2150 1    50   Input ~ 0
 I2C0CLK
 Wire Wire Line
-	6150 4400 6150 4600
-Connection ~ 6150 4600
-Text HLabel 6250 4400 1    50   Input ~ 0
+	5400 2150 5400 2350
+Text HLabel 5500 2150 1    50   Input ~ 0
 I2C0SDA
 Wire Wire Line
-	6250 4400 6250 4700
+	5500 2150 5500 2450
 Wire Wire Line
-	4450 4600 6150 4600
-Connection ~ 6250 4700
-Text HLabel 6150 2200 1    50   Input ~ 0
+	4450 4600 5400 4600
+Text HLabel 7100 2200 1    50   Input ~ 0
 I2C1SDA
-Text HLabel 6050 2200 1    50   Input ~ 0
+Text HLabel 7000 2200 1    50   Input ~ 0
 I2C1CLK
-Wire Wire Line
-	6050 2200 6050 2350
-Connection ~ 6050 2350
 $Comp
 L power:GND #PWR038
 U 1 1 5C58F414
@@ -325,8 +303,6 @@ F 3 "" H 7850 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 2350 6050 2350
-Wire Wire Line
 	9600 4900 10300 4900
 Wire Wire Line
 	10300 4900 10300 5400
@@ -362,15 +338,13 @@ Wire Wire Line
 Connection ~ 3500 2350
 Wire Wire Line
 	3500 2350 2950 2350
-Wire Wire Line
-	4450 2450 6150 2450
 NoConn ~ 4450 2550
-Wire Wire Line
-	6150 2200 6150 2450
 $Comp
-L bmx055:BMX055 U8
+L lark-rescue:BMX055-bmx055 U8
 U 1 1 5C6812A2
 P 8500 2800
+AR Path="/5C6812A2" Ref="U8"  Part="1" 
+AR Path="/5C4F6DA1/5C6812A2" Ref="U8"  Part="1" 
 F 0 "U8" H 8525 3765 50  0000 C CNN
 F 1 "BMX055" H 8525 3674 50  0000 C CNN
 F 2 "BMX055:BMX055" H 8600 2800 50  0001 C CNN
@@ -392,16 +366,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3500 9400 4200
 Wire Wire Line
-	7000 2350 6050 2350
-Wire Wire Line
-	6900 2450 6150 2450
-Connection ~ 6150 2450
-Wire Wire Line
-	6900 2450 6900 4200
-Wire Wire Line
-	6900 4200 9400 4200
-Wire Wire Line
-	7000 2350 7000 3350
+	7100 4200 9400 4200
 Wire Wire Line
 	7000 3350 7700 3350
 Wire Wire Line
@@ -468,4 +433,36 @@ Wire Wire Line
 Connection ~ 8600 1400
 Wire Wire Line
 	8600 1400 9200 1400
+Wire Wire Line
+	4450 2350 5400 2350
+Wire Wire Line
+	4450 2450 5500 2450
+Wire Wire Line
+	5500 4700 4450 4700
+Wire Wire Line
+	3500 4900 3500 5100
+Wire Wire Line
+	4600 4900 4600 4450
+Wire Wire Line
+	4600 4450 3500 4450
+Wire Wire Line
+	3500 4450 3500 4600
+Wire Wire Line
+	4450 4900 4600 4900
+Wire Wire Line
+	5400 2350 5400 4600
+Wire Wire Line
+	5500 2450 5500 4700
+Wire Wire Line
+	7100 2200 7100 4200
+Wire Wire Line
+	7000 2200 7000 3350
+Connection ~ 7000 3350
+Connection ~ 7100 4200
+Wire Wire Line
+	7100 4200 7100 5300
+Wire Wire Line
+	7000 3350 7000 5400
+Connection ~ 5400 2350
+Connection ~ 5500 2450
 $EndSCHEMATC

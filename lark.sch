@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dk_RF-Transceiver-Modules:ESP32-WROOM-32 MOD1
+L lark-rescue:ESP32-WROOM-32-dk_RF-Transceiver-Modules MOD1
 U 1 1 5C429E20
 P 3350 1550
 F 0 "MOD1" H 3050 -600 60  0000 C CNN
