@@ -22,10 +22,6 @@ Text HLabel 1300 2350 0    50   Input ~ 0
 U1RXD
 Text HLabel 1300 2700 0    50   Input ~ 0
 U1TXD
-Text HLabel 1300 3050 0    50   Input ~ 0
-U1RTS
-Text HLabel 1300 3400 0    50   Input ~ 0
-U1CTS
 Text HLabel 1300 3750 0    50   Input ~ 0
 U2RXD
 Text HLabel 1300 4100 0    50   Input ~ 0
@@ -328,78 +324,15 @@ Wire Wire Line
 Connection ~ 8650 3250
 Wire Wire Line
 	8650 3250 8750 3250
-$Comp
-L lark-rescue:Conn_01x05-Connector_Generic J6
-U 1 1 5C55F24D
-P 2550 2050
-F 0 "J6" V 2516 1762 50  0000 R CNN
-F 1 "UART1" V 2425 1762 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2550 2050 50  0001 C CNN
-F 3 "~" H 2550 2050 50  0001 C CNN
-	1    2550 2050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L lark-rescue:R-Device R29
-U 1 1 5C55F619
-P 1650 3050
-F 0 "R29" V 1443 3050 50  0000 C CNN
-F 1 "470R" V 1534 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 3050 50  0001 C CNN
-F 3 "~" H 1650 3050 50  0001 C CNN
-F 4 "RC0805FR-07470RL" V 1650 3050 50  0001 C CNN "MPN"
-	1    1650 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L lark-rescue:R-Device R30
-U 1 1 5C55F6A5
-P 1650 3400
-F 0 "R30" V 1443 3400 50  0000 C CNN
-F 1 "470R" V 1534 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 3400 50  0001 C CNN
-F 3 "~" H 1650 3400 50  0001 C CNN
-F 4 "RC0805FR-07470RL" V 1650 3400 50  0001 C CNN "MPN"
-	1    1650 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1800 2350 2350 2350
 Wire Wire Line
 	2350 2350 2350 2250
 Wire Wire Line
-	1800 2700 2450 2700
-Wire Wire Line
-	2450 2700 2450 2250
-Wire Wire Line
-	1800 3050 2550 3050
-Wire Wire Line
-	2550 3050 2550 2250
-Wire Wire Line
-	1800 3400 2650 3400
-Wire Wire Line
-	2650 3400 2650 2250
-Wire Wire Line
-	2450 2700 4000 2700
-Connection ~ 2450 2700
-Wire Wire Line
 	4000 3100 2350 3100
 Wire Wire Line
 	2350 3100 2350 2350
 Connection ~ 2350 2350
-$Comp
-L lark-rescue:GND-power #PWR045
-U 1 1 5C5627B3
-P 2750 2400
-F 0 "#PWR045" H 2750 2150 50  0001 C CNN
-F 1 "GND" H 2755 2227 50  0000 C CNN
-F 2 "" H 2750 2400 50  0001 C CNN
-F 3 "" H 2750 2400 50  0001 C CNN
-	1    2750 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 2250 2750 2400
 $Comp
 L lark-rescue:R-Device R31
 U 1 1 5C56310B
@@ -440,10 +373,6 @@ Wire Wire Line
 	1300 3750 1500 3750
 Wire Wire Line
 	1500 4100 1300 4100
-Wire Wire Line
-	1300 3400 1500 3400
-Wire Wire Line
-	1500 3050 1300 3050
 Wire Wire Line
 	1300 2700 1500 2700
 Wire Wire Line
@@ -604,30 +533,6 @@ F 4 "885012207128" H 3050 5100 50  0001 C CNN "MPN"
 	1    3050 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L lark-rescue:C-Device C45
-U 1 1 5C5B14AD
-P 4050 5100
-F 0 "C45" H 4165 5146 50  0000 L CNN
-F 1 "100n" H 4165 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4950 50  0001 C CNN
-F 3 "~" H 4050 5100 50  0001 C CNN
-F 4 "885012207128" H 4050 5100 50  0001 C CNN "MPN"
-	1    4050 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:CP-Device C46
-U 1 1 5C5BC765
-P 4500 5100
-F 0 "C46" H 4618 5146 50  0000 L CNN
-F 1 "470u" H 4618 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 4538 4950 50  0001 C CNN
-F 3 "~" H 4500 5100 50  0001 C CNN
-F 4 "493-16063-1-ND" H 4500 5100 50  0001 C CNN "MPN"
-	1    4500 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 4850 3650 4850
 Wire Wire Line
@@ -646,20 +551,15 @@ Wire Wire Line
 	3900 4850 4050 4850
 Wire Wire Line
 	4050 4950 4050 4850
-Connection ~ 4050 4850
-Wire Wire Line
-	4500 4850 4500 4950
-Wire Wire Line
-	4050 4850 4500 4850
 $Comp
 L lark-rescue:GND-power #PWR049
 U 1 1 5C5EF347
-P 4500 5400
-F 0 "#PWR049" H 4500 5150 50  0001 C CNN
-F 1 "GND" H 4505 5227 50  0000 C CNN
-F 2 "" H 4500 5400 50  0001 C CNN
-F 3 "" H 4500 5400 50  0001 C CNN
-	1    4500 5400
+P 4050 5350
+F 0 "#PWR049" H 4050 5100 50  0001 C CNN
+F 1 "GND" H 4055 5177 50  0000 C CNN
+F 2 "" H 4050 5350 50  0001 C CNN
+F 3 "" H 4050 5350 50  0001 C CNN
+	1    4050 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -674,14 +574,7 @@ F 3 "" H 3050 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 5400 4500 5350
-Wire Wire Line
 	4050 5250 4050 5350
-Wire Wire Line
-	4050 5350 4500 5350
-Connection ~ 4500 5350
-Wire Wire Line
-	4500 5350 4500 5250
 Wire Wire Line
 	3050 5250 3050 5350
 $Comp
@@ -823,4 +716,18 @@ Wire Wire Line
 Wire Wire Line
 	5200 7000 4750 7000
 NoConn ~ 5200 6800
+$Comp
+L lark-rescue:C-Device C45
+U 1 1 5C5B14AD
+P 4050 5100
+F 0 "C45" H 4165 5146 50  0000 L CNN
+F 1 "100n" H 4165 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4950 50  0001 C CNN
+F 3 "~" H 4050 5100 50  0001 C CNN
+F 4 "885012207128" H 4050 5100 50  0001 C CNN "MPN"
+	1    4050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2700 4000 2700
 $EndSCHEMATC

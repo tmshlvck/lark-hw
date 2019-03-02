@@ -74,10 +74,8 @@ U 5C42B39D
 F0 "Power" 50
 F1 "lark-pwr.sch" 50
 F2 "PWRIN" I L 1850 5600 50 
-F3 "PSTATPWR" I R 2900 5600 50 
-F4 "ACCELPWR" I R 2900 6350 50 
-F5 "PDIFPWR" I R 2900 5850 50 
-F6 "PDUSPWR" I R 2900 6100 50 
+F3 "ACCELPWR" I R 2900 6350 50 
+F4 "SENSPWR" I R 2900 5450 50 
 $EndSheet
 $Comp
 L lark-rescue:GND-power #PWR03
@@ -95,14 +93,17 @@ S 3250 5300 1050 1250
 U 5C4F6DA1
 F0 "Sensors" 50
 F1 "lark-sensors.sch" 50
-F2 "PSTATPWR" I L 3250 5600 50 
-F3 "PDUSPWR" I L 3250 6100 50 
-F4 "PDIFPWR" I L 3250 5850 50 
-F5 "ACCELPWR" I L 3250 6350 50 
-F6 "I2C0CLK" I R 4300 6250 50 
-F7 "I2C0SDA" I R 4300 6400 50 
-F8 "I2C1SDA" I R 4300 5700 50 
-F9 "I2C1CLK" I R 4300 5550 50 
+F2 "ACCELPWR" I L 3250 6350 50 
+F3 "I2C0CLK" I R 4300 6250 50 
+F4 "I2C0SDA" I R 4300 6400 50 
+F5 "SENSPWR" I L 3250 5450 50 
+F6 "CS_ACC" I R 4300 5400 50 
+F7 "CS_GYR" I R 4300 5700 50 
+F8 "BMX_DO" I R 4300 5900 50 
+F9 "BMX_DI" I R 4300 6000 50 
+F10 "BMX_CK" I R 4300 6100 50 
+F11 "INT_ACC" I R 4300 5500 50 
+F12 "INT_GYR" I R 4300 5600 50 
 $EndSheet
 Text GLabel 4500 1650 2    50   Input ~ 0
 VSENS
@@ -120,10 +121,6 @@ Text GLabel 2650 3250 0    50   Input ~ 0
 SND_L
 Text GLabel 2650 3350 0    50   Input ~ 0
 SND_R
-Text GLabel 2650 3450 0    50   Input ~ 0
-U1RTS
-Text GLabel 2650 2350 0    50   Input ~ 0
-U1CTS
 Text GLabel 2650 2150 0    50   Input ~ 0
 LED1
 Text GLabel 2650 2250 0    50   Input ~ 0
@@ -240,15 +237,11 @@ $EndComp
 Wire Wire Line
 	2650 2250 2850 2250
 Wire Wire Line
-	2650 2350 2850 2350
-Wire Wire Line
 	2650 3150 2850 3150
 Wire Wire Line
 	2850 3250 2650 3250
 Wire Wire Line
 	2650 3350 2850 3350
-Wire Wire Line
-	2850 3450 2650 3450
 Wire Wire Line
 	2650 2150 2850 2150
 Text GLabel 1400 2450 0    50   Input ~ 0
@@ -339,10 +332,6 @@ Text GLabel 2650 2850 0    50   Input ~ 0
 SPIQ
 Wire Wire Line
 	2850 2850 2650 2850
-Text GLabel 2650 2950 0    50   Input ~ 0
-I2C1_SCK
-Wire Wire Line
-	2650 2950 2850 2950
 Text GLabel 4500 2550 2    50   Input ~ 0
 U0RXD
 Wire Wire Line
@@ -359,38 +348,6 @@ Wire Wire Line
 	4250 2950 4500 2950
 Wire Wire Line
 	4500 3050 4250 3050
-Text GLabel 2650 3050 0    50   Input ~ 0
-I2C1_SDA
-Wire Wire Line
-	2850 3050 2650 3050
-Text GLabel 6050 5550 2    50   Input ~ 0
-I2C1_SCK
-Text GLabel 6050 5700 2    50   Input ~ 0
-I2C1_SDA
-$Comp
-L lark-rescue:R-Device R16
-U 1 1 5C5EB518
-P 4600 5100
-F 0 "R16" H 4530 5054 50  0000 R CNN
-F 1 "10k" H 4530 5145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 5100 50  0001 C CNN
-F 3 "~" H 4600 5100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 4600 5100 50  0001 C CNN "MPN"
-	1    4600 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L lark-rescue:R-Device R17
-U 1 1 5C5EB606
-P 4950 5100
-F 0 "R17" H 4880 5054 50  0000 R CNN
-F 1 "10k" H 4880 5145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 5100 50  0001 C CNN
-F 3 "~" H 4950 5100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 4950 5100 50  0001 C CNN "MPN"
-	1    4950 5100
-	-1   0    0    1   
-$EndComp
 $Comp
 L lark-rescue:VDD-power #PWR09
 U 1 1 5C5EB6C8
@@ -479,12 +436,6 @@ F 4 "RC0805FR-0710KL" H 5300 5100 50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	4600 4800 4600 4950
-Wire Wire Line
-	4600 4950 4950 4950
-Connection ~ 4600 4950
-Wire Wire Line
-	4950 4950 5300 4950
-Connection ~ 4950 4950
 Text GLabel 6050 6250 2    50   Input ~ 0
 I2C0_SCK
 Text GLabel 6050 6400 2    50   Input ~ 0
@@ -519,12 +470,6 @@ Wire Wire Line
 	5650 4950 5950 4950
 Connection ~ 5650 4950
 Wire Wire Line
-	2900 5600 3250 5600
-Wire Wire Line
-	2900 5850 3250 5850
-Wire Wire Line
-	3250 6100 2900 6100
-Wire Wire Line
 	2900 6350 3250 6350
 $Sheet
 S 8900 3100 1050 1250
@@ -535,10 +480,8 @@ F2 "SND_L" I L 8900 3400 50
 F3 "SND_R" I L 8900 3600 50 
 F4 "U1RXD" I R 9950 3400 50 
 F5 "U1TXD" I R 9950 3600 50 
-F6 "U1RTS" I R 9950 3800 50 
-F7 "U1CTS" I R 9950 4000 50 
-F8 "U2RXD" I L 8900 3900 50 
-F9 "U2TXD" I L 8900 4100 50 
+F6 "U2RXD" I L 8900 3900 50 
+F7 "U2TXD" I L 8900 4100 50 
 $EndSheet
 $Comp
 L lark-rescue:VDD-power #PWR010
@@ -1122,18 +1065,10 @@ Text GLabel 10300 3400 2    50   Input ~ 0
 U1RXD
 Text GLabel 10300 3600 2    50   Input ~ 0
 U1TXD
-Text GLabel 10300 3800 2    50   Input ~ 0
-U1RTS
-Text GLabel 10300 4000 2    50   Input ~ 0
-U1CTS
 Wire Wire Line
 	10300 3400 9950 3400
 Wire Wire Line
 	9950 3600 10300 3600
-Wire Wire Line
-	10300 3800 9950 3800
-Wire Wire Line
-	9950 4000 10300 4000
 Wire Wire Line
 	8900 4100 8550 4100
 Wire Wire Line
@@ -1146,20 +1081,6 @@ Wire Wire Line
 	4300 6250 4850 6250
 Wire Wire Line
 	4300 6400 4750 6400
-Wire Wire Line
-	6050 5550 4600 5550
-Wire Wire Line
-	6050 5700 4950 5700
-Wire Wire Line
-	4600 5250 4600 5550
-Connection ~ 4600 5550
-Wire Wire Line
-	4600 5550 4300 5550
-Wire Wire Line
-	4950 5250 4950 5700
-Connection ~ 4950 5700
-Wire Wire Line
-	4950 5700 4300 5700
 Wire Wire Line
 	5300 5250 5300 6250
 Connection ~ 5300 6250
@@ -1253,4 +1174,44 @@ Wire Wire Line
 	4650 6800 4350 6800
 Wire Wire Line
 	4350 6800 4350 6950
+Wire Wire Line
+	4600 4950 5300 4950
+Wire Wire Line
+	2900 5450 3250 5450
+Wire Wire Line
+	4300 6000 4650 6000
+Wire Wire Line
+	4300 6100 4650 6100
+Wire Wire Line
+	4300 5900 4650 5900
+Text GLabel 4650 6000 2    50   Input ~ 0
+SPID
+Text GLabel 4650 5900 2    50   Input ~ 0
+SPIQ
+Text GLabel 4650 6100 2    50   Input ~ 0
+SPICLK
+Wire Wire Line
+	4300 5700 4650 5700
+Wire Wire Line
+	4300 5400 4650 5400
+Wire Wire Line
+	4300 5500 4650 5500
+Wire Wire Line
+	4300 5600 4650 5600
+Wire Wire Line
+	2850 2950 2250 2950
+Wire Wire Line
+	2850 3050 2250 3050
+Text GLabel 2250 2950 0    50   Input ~ 0
+CS_ACC
+Text GLabel 2250 3050 0    50   Input ~ 0
+CS_GYR
+Wire Wire Line
+	2200 2350 2850 2350
+Wire Wire Line
+	2250 3450 2850 3450
+Text GLabel 2250 3450 0    50   Input ~ 0
+INT_GYR
+Text GLabel 2200 2350 0    50   Input ~ 0
+INT_ACC
 $EndSCHEMATC

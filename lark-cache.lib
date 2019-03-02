@@ -1,11 +1,103 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# lark-rescue:+12V-power
+# Device_R_Small
 #
-DEF lark-rescue:+12V-power #PWR 0 0 Y Y 1 F P
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Interface_Expansion_PCA9544AD
+#
+DEF Interface_Expansion_PCA9544AD U 0 40 Y Y 1 F N
+F0 "U" -350 850 50 H V C CNN
+F1 "Interface_Expansion_PCA9544AD" 250 850 50 H V C CNN
+F2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" 1000 -850 50 H I C CNN
+F3 "" -200 -1100 50 H I C CNN
+$FPLIST
+ SOIC*7.5x12.8mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S 400 800 -400 -800 0 1 10 f
+X A0 1 -500 -500 100 R 50 50 1 1 I
+X VSS 10 0 -900 100 U 50 50 1 1 W
+X ~INT2 11 500 -300 100 L 50 50 1 1 I
+X SD2 12 500 -100 100 L 50 50 1 1 B
+X SC2 13 500 -200 100 L 50 50 1 1 B
+X ~INT3 14 500 -700 100 L 50 50 1 1 I
+X SD3 15 500 -500 100 L 50 50 1 1 B
+X SC3 16 500 -600 100 L 50 50 1 1 B
+X ~INT 17 -500 -300 100 R 50 50 1 1 C
+X SCL 18 -500 -200 100 R 50 50 1 1 B
+X SDA 19 -500 -100 100 R 50 50 1 1 B
+X A1 2 -500 -600 100 R 50 50 1 1 I
+X VDD 20 0 900 100 D 50 50 1 1 W
+X A2 3 -500 -700 100 R 50 50 1 1 I
+X ~INT0 4 500 500 100 L 50 50 1 1 I
+X SD0 5 500 700 100 L 50 50 1 1 B
+X SC0 6 500 600 100 L 50 50 1 1 B
+X ~INT1 7 500 100 100 L 50 50 1 1 I
+X SD1 8 500 300 100 L 50 50 1 1 B
+X SC1 9 500 200 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Regulator_Linear_AP2112K-3.3
+#
+DEF Regulator_Linear_AP2112K-3.3 U 0 10 Y Y 1 F N
+F0 "U" -200 225 50 H V L CNN
+F1 "Regulator_Linear_AP2112K-3.3" 0 225 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+ALIAS AP2204K-1.8 AP2204K-2.5 AP2204K-2.8 AP2204K-3.0 AP2204K-3.3 AP2204K-5.0 AP2127K-1.0 AP2127K-1.2 AP2127K-1.5 AP2127K-1.8 AP2127K-2.5 AP2127K-2.8 AP2127K-3.0 AP2127K-3.3 AP2127K-4.2 AP2127K-4.75 AP2112K-1.2 AP2112K-1.8 AP2112K-2.5 AP2112K-2.6 AP2112K-3.3
+$FPLIST
+ SOT?23?5*
+$ENDFPLIST
+DRAW
+S -200 175 200 -200 0 1 10 f
+X VIN 1 -300 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -300 0 100 R 50 50 1 1 I
+X NC 4 300 0 100 L 50 50 1 1 N N
+X VOUT 5 300 100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Regulator_Switching_R-785.0-1.0
+#
+DEF Regulator_Switching_R-785.0-1.0 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Switching_R-785.0-1.0" 0 125 50 H V L CNN
+F2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" 50 -250 50 H I L CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS R-78E3.3-0.5 R-78E9.0-0.5 R-78E12-0.5 R-78E15-0.5 R-78E5.0-1.0 R-78E3.3-1.0 R-78C1.8-1.0 R-78C5.0-1.0 R-78C3.3-1.0 R-78C9.0-1.0 R-78C12-1.0 R-78C15-1.0 R-781.8-1.0 R-782.5-1.0 R-783.3-1.0 R-785.0-1.0 R-781.5-0.5 R-781.8-0.5 R-782.5-0.5 R-783.3-0.5 R-785.0-0.5 R-786.5-0.5 R-7812-0.5 R-7815-0.5
+$FPLIST
+ Converter*DCDC*RECOM*R*78E*0.5*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# lark-rescue_+12V-power
+#
+DEF lark-rescue_+12V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "lark-rescue:+12V-power" 0 140 50 H V C CNN
+F1 "lark-rescue_+12V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +108,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:+5V-power
+# lark-rescue_+5V-power
 #
-DEF lark-rescue:+5V-power #PWR 0 0 Y Y 1 F P
+DEF lark-rescue_+5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "lark-rescue:+5V-power" 0 140 50 H V C CNN
+F1 "lark-rescue_+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +123,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks
+# lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks
 #
-DEF lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks J 0 40 Y Y 1 F N
+DEF lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks J 0 40 Y Y 1 F N
 F0 "J" -430 360 50 H V R CNN
-F1 "lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks" 50 -80 50 H V C CNN
+F1 "lark-rescue_54602-908LF-dk_Modular-Connectors-Jacks" 50 -80 50 H V C CNN
 F2 "digikey-footprints:Ethernet_Jack_54602-908LF" 200 200 50 H I L CNN
 F3 "" 200 300 60 H I L CNN
 F4 "609-1046-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -76,11 +168,11 @@ X ~ 8 400 400 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:BMX055-bmx055
+# lark-rescue_BMX055-bmx055
 #
-DEF lark-rescue:BMX055-bmx055 U 0 40 Y Y 1 F N
+DEF lark-rescue_BMX055-bmx055 U 0 40 Y Y 1 F N
 F0 "U" 0 -950 50 H V C CNN
-F1 "lark-rescue:BMX055-bmx055" 0 900 50 H V C CNN
+F1 "lark-rescue_BMX055-bmx055" 0 900 50 H V C CNN
 F2 "" 100 0 50 H I C CNN
 F3 "" 100 0 50 H I C CNN
 DRAW
@@ -108,11 +200,11 @@ X SCx 9 -800 -550 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:C-Device
+# lark-rescue_C-Device
 #
-DEF lark-rescue:C-Device C 0 10 N Y 1 F N
+DEF lark-rescue_C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "lark-rescue:C-Device" 25 -100 50 H V L CNN
+F1 "lark-rescue_C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -126,11 +218,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:CP-Device
+# lark-rescue_CP-Device
 #
-DEF lark-rescue:CP-Device C 0 10 N Y 1 F N
+DEF lark-rescue_CP-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "lark-rescue:CP-Device" 25 -100 50 H V L CNN
+F1 "lark-rescue_CP-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -149,11 +241,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Conn_01x04-Connector_Generic
+# lark-rescue_Conn_01x04-Connector_Generic
 #
-DEF lark-rescue:Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
+DEF lark-rescue_Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "lark-rescue:Conn_01x04-Connector_Generic" 0 -300 50 H V C CNN
+F1 "lark-rescue_Conn_01x04-Connector_Generic" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -172,36 +264,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Conn_01x05-Connector_Generic
+# lark-rescue_Conn_01x06-Connector_Generic
 #
-DEF lark-rescue:Conn_01x05-Connector_Generic J 0 40 Y N 1 F N
+DEF lark-rescue_Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "lark-rescue:Conn_01x05-Connector_Generic" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -250 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# lark-rescue:Conn_01x06-Connector_Generic
-#
-DEF lark-rescue:Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "lark-rescue:Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
+F1 "lark-rescue_Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -224,11 +291,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Conn_01x07-Connector_Generic
+# lark-rescue_Conn_01x07-Connector_Generic
 #
-DEF lark-rescue:Conn_01x07-Connector_Generic J 0 40 Y N 1 F N
+DEF lark-rescue_Conn_01x07-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "lark-rescue:Conn_01x07-Connector_Generic" 0 -400 50 H V C CNN
+F1 "lark-rescue_Conn_01x07-Connector_Generic" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -253,11 +320,11 @@ X Pin_7 7 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:D_Schottky-Device
+# lark-rescue_D_Schottky-Device
 #
-DEF lark-rescue:D_Schottky-Device D 0 40 N N 1 F N
+DEF lark-rescue_D_Schottky-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "lark-rescue:D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "lark-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -275,11 +342,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:D_Zener-Device
+# lark-rescue_D_Zener-Device
 #
-DEF lark-rescue:D_Zener-Device D 0 40 N N 1 F N
+DEF lark-rescue_D_Zener-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "lark-rescue:D_Zener-Device" 0 -100 50 H V C CNN
+F1 "lark-rescue_D_Zener-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -297,11 +364,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:ESP32-WROOM-32-dk_RF-Transceiver-Modules
+# lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules
 #
-DEF lark-rescue:ESP32-WROOM-32-dk_RF-Transceiver-Modules MOD 0 40 Y Y 1 F N
+DEF lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules MOD 0 40 Y Y 1 F N
 F0 "MOD" -400 50 60 H V L CNN
-F1 "lark-rescue:ESP32-WROOM-32-dk_RF-Transceiver-Modules" 200 -1000 60 V V C CNN
+F1 "lark-rescue_ESP32-WROOM-32-dk_RF-Transceiver-Modules" 200 -1000 60 V V C CNN
 F2 "digikey-footprints:ESP32-WROOM-32D" 200 200 60 H I L CNN
 F3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" 200 300 60 H I L CNN
 F4 "1904-1010-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -357,11 +424,11 @@ X IO33 9 900 -1400 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Ferrite_Bead-Device
+# lark-rescue_Ferrite_Bead-Device
 #
-DEF lark-rescue:Ferrite_Bead-Device FB 0 0 N Y 1 F N
+DEF lark-rescue_Ferrite_Bead-Device FB 0 0 N Y 1 F N
 F0 "FB" -150 25 50 V V C CNN
-F1 "lark-rescue:Ferrite_Bead-Device" 150 0 50 V V C CNN
+F1 "lark-rescue_Ferrite_Bead-Device" 150 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -378,11 +445,11 @@ X ~ 2 0 -150 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:GND-power
+# lark-rescue_GND-power
 #
-DEF lark-rescue:GND-power #PWR 0 0 Y Y 1 F P
+DEF lark-rescue_GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "lark-rescue:GND-power" 0 -150 50 H V C CNN
+F1 "lark-rescue_GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -391,28 +458,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:INDUCTOR-pspice
+# lark-rescue_LED-Device
 #
-DEF lark-rescue:INDUCTOR-pspice L 0 0 N Y 1 F N
-F0 "L" 0 100 50 H V C CNN
-F1 "lark-rescue:INDUCTOR-pspice" 0 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
-A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
-A 50 0 50 1 1799 0 1 0 N 100 0 0 0
-A 150 0 50 1 1799 0 1 0 N 200 0 100 0
-X 1 1 -250 0 50 R 30 30 1 1 I
-X 2 2 250 0 50 L 30 30 1 1 I
-ENDDRAW
-ENDDEF
-#
-# lark-rescue:LED-Device
-#
-DEF lark-rescue:LED-Device D 0 40 N N 1 F N
+DEF lark-rescue_LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "lark-rescue:LED-Device" 0 -100 50 H V C CNN
+F1 "lark-rescue_LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -431,31 +481,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:LM2596S-5-Regulator_Switching
+# lark-rescue_MAX3232-Interface_UART
 #
-DEF lark-rescue:LM2596S-5-Regulator_Switching U 0 20 Y Y 1 F N
-F0 "U" -400 250 50 H V L CNN
-F1 "lark-rescue:LM2596S-5-Regulator_Switching" 0 250 50 H V L CNN
-F2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" 50 -250 50 H I L CIN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO?263*
-$ENDFPLIST
-DRAW
-S -400 200 400 -200 0 1 10 f
-X VIN 1 -500 100 100 R 50 50 1 1 W
-X OUT 2 500 -100 100 L 50 50 1 1 O
-X GND 3 0 -300 100 U 50 50 1 1 W
-X FB 4 500 100 100 L 50 50 1 1 I
-X ~ON~/OFF 5 -500 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# lark-rescue:MAX3232-Interface_UART
-#
-DEF lark-rescue:MAX3232-Interface_UART U 0 40 Y Y 1 F N
+DEF lark-rescue_MAX3232-Interface_UART U 0 40 Y Y 1 F N
 F0 "U" -100 1125 50 H V R CNN
-F1 "lark-rescue:MAX3232-Interface_UART" -100 1050 50 H V R CNN
+F1 "lark-rescue_MAX3232-Interface_UART" -100 1050 50 H V R CNN
 F2 "" 50 -1050 50 H I L CNN
 F3 "" 0 100 50 H I C CNN
 $FPLIST
@@ -502,11 +532,11 @@ X R2OUT 9 -800 -700 200 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear
+# lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear
 #
-DEF lark-rescue:MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
+DEF lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
 F0 "U" 0 150 60 H V C CNN
-F1 "lark-rescue:MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear" 0 250 60 H V C CNN
+F1 "lark-rescue_MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear" 0 250 60 H V C CNN
 F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
 F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 300 60 H I L CNN
 F4 "MCP1700T3302ETTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -526,11 +556,11 @@ X IN 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:PWR_FLAG-power
+# lark-rescue_PWR_FLAG-power
 #
-DEF lark-rescue:PWR_FLAG-power #FLG 0 0 N N 1 F P
+DEF lark-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "lark-rescue:PWR_FLAG-power" 0 150 50 H V C CNN
+F1 "lark-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -539,11 +569,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Polyfuse-Device
+# lark-rescue_Polyfuse-Device
 #
-DEF lark-rescue:Polyfuse-Device F 0 0 N Y 1 F N
+DEF lark-rescue_Polyfuse-Device F 0 0 N Y 1 F N
 F0 "F" -100 0 50 V V C CNN
-F1 "lark-rescue:Polyfuse-Device" 100 0 50 V V C CNN
+F1 "lark-rescue_Polyfuse-Device" 100 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -559,11 +589,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:R-Device
+# lark-rescue_R-Device
 #
-DEF lark-rescue:R-Device R 0 0 N Y 1 F N
+DEF lark-rescue_R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "lark-rescue:R-Device" 0 0 50 V V C CNN
+F1 "lark-rescue_R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -576,11 +606,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:SJ1-3523N-dk_Barrel-Audio-Connectors
+# lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors
 #
-DEF lark-rescue:SJ1-3523N-dk_Barrel-Audio-Connectors CON 0 0 N Y 1 F N
+DEF lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors CON 0 0 N Y 1 F N
 F0 "CON" -300 250 60 H V L CNN
-F1 "lark-rescue:SJ1-3523N-dk_Barrel-Audio-Connectors" -50 -250 60 H V C CNN
+F1 "lark-rescue_SJ1-3523N-dk_Barrel-Audio-Connectors" -50 -250 60 H V C CNN
 F2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" 200 200 60 H I L CNN
 F3 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" 200 300 60 H I L CNN
 F4 "CP1-3523N-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -603,11 +633,11 @@ X R 3 400 100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:SW_DPST_x2-Switch
+# lark-rescue_SW_DPST_x2-Switch
 #
-DEF lark-rescue:SW_DPST_x2-Switch SW 0 0 Y N 2 F N
+DEF lark-rescue_SW_DPST_x2-Switch SW 0 0 Y N 2 F N
 F0 "SW" 0 125 50 H V C CNN
-F1 "lark-rescue:SW_DPST_x2-Switch" 0 -100 50 H V C CNN
+F1 "lark-rescue_SW_DPST_x2-Switch" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -621,11 +651,11 @@ X B 4 200 0 100 L 50 50 2 1 I
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:SW_Push-Switch
+# lark-rescue_SW_Push-Switch
 #
-DEF lark-rescue:SW_Push-Switch SW 0 40 N N 1 F N
+DEF lark-rescue_SW_Push-Switch SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "lark-rescue:SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "lark-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -638,11 +668,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Screw_Terminal_01x02-Connector
+# lark-rescue_Screw_Terminal_01x02-Connector
 #
-DEF lark-rescue:Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
+DEF lark-rescue_Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "lark-rescue:Screw_Terminal_01x02-Connector" 0 -200 50 H V C CNN
+F1 "lark-rescue_Screw_Terminal_01x02-Connector" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -661,75 +691,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:TPS2511-tps2511
+# lark-rescue_VDD-power
 #
-DEF lark-rescue:TPS2511-tps2511 U 0 40 Y Y 1 F N
-F0 "U" 0 500 50 H V C CNN
-F1 "lark-rescue:TPS2511-tps2511" 0 600 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -450 400 -450 400 0 1 0 N
-S -450 400 450 -500 0 1 0 f
-X GND 1 -750 250 300 R 50 50 1 1 W
-X ILIM_SET 2 -750 50 300 R 50 50 1 1 I
-X IN 3 -750 -150 300 R 50 50 1 1 W
-X ~CS 4 -750 -350 300 R 50 50 1 1 W
-X EN 5 750 -350 300 L 50 50 1 1 I
-X DP 6 750 -150 300 L 50 50 1 1 O
-X DM 7 750 50 300 L 50 50 1 1 O
-X OUT 8 750 250 300 L 50 50 1 1 w
-X PAD 9 0 -800 300 U 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# lark-rescue:UE27AC54100-dk_USB-DVI-HDMI-Connectors
-#
-DEF lark-rescue:UE27AC54100-dk_USB-DVI-HDMI-Connectors J 0 40 Y Y 1 F N
-F0 "J" -50 375 60 H V C CNN
-F1 "lark-rescue:UE27AC54100-dk_USB-DVI-HDMI-Connectors" -125 75 60 V V C CNN
-F2 "digikey-footprints:USB_A_Female_UE27AC54100" 200 200 60 H I L CNN
-F3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" 200 300 60 H I L CNN
-F4 "UE27AC54100-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "UE27AC54100" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "USB, DVI, HDMI Connectors" 200 700 60 H I L CNN "Family"
-F8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/amphenol-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN RCPT USB2.0 TYPEA 4POS R/A" 200 1000 60 H I L CNN "Description"
-F11 "Amphenol Commercial Products" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -50 -175 -75 275 0 1 0 f
-S 50 250 0 -150 0 1 0 N
-S 100 -75 75 -125 0 1 0 F
-S 100 25 75 -25 0 1 0 F
-S 100 125 75 75 0 1 0 F
-S 100 175 75 225 0 1 0 F
-S 150 -200 -25 -225 0 1 0 f
-S 150 300 -25 325 0 1 0 f
-S 175 275 200 -175 0 1 0 f
-P 2 0 1 0 50 -150 75 -175 N
-P 2 0 1 0 50 250 75 275 N
-P 2 0 1 0 200 -100 100 -100 N
-P 2 0 1 0 200 0 100 0 N
-P 2 0 1 0 200 100 100 100 N
-P 2 0 1 0 200 200 100 200 N
-P 19 0 1 0 -25 250 -25 -150 -25 -157 -24 -162 -22 -169 -16 -174 -9 -175 -5 -174 -3 -175 -2 -174 0 -175 75 -175 75 275 0 275 -7 272 -16 267 -20 263 -23 259 -25 250 N
-P 25 0 1 0 -25 -200 150 -200 156 -198 164 -195 168 -189 172 -185 173 -179 175 -175 175 275 174 279 174 280 173 286 167 294 160 299 150 300 -25 300 -32 298 -44 289 -48 281 -50 275 -50 -175 -48 -184 -42 -193 -36 -198 -25 -200 f
-X ~ 1 300 -100 100 L 50 50 1 1 P
-X ~ 2 300 0 100 L 50 50 1 1 P
-X ~ 3 300 100 100 L 50 50 1 1 P
-X ~ 4 300 200 100 L 50 50 1 1 P
-X ~ SH 125 -325 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# lark-rescue:VDD-power
-#
-DEF lark-rescue:VDD-power #PWR 0 0 Y Y 1 F P
+DEF lark-rescue_VDD-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "lark-rescue:VDD-power" 0 150 50 H V C CNN
+F1 "lark-rescue_VDD-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -739,11 +705,11 @@ X VDD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# lark-rescue:Varistor-Device
+# lark-rescue_Varistor-Device
 #
-DEF lark-rescue:Varistor-Device RV 0 0 N Y 1 F N
+DEF lark-rescue_Varistor-Device RV 0 0 N Y 1 F N
 F0 "RV" 125 0 50 V V C CNN
-F1 "lark-rescue:Varistor-Device" -125 0 50 V V C CNN
+F1 "lark-rescue_Varistor-Device" -125 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -759,11 +725,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pam8403:PAM8403
+# pam8403_PAM8403
 #
-DEF pam8403:PAM8403 U 0 40 Y Y 1 F N
+DEF pam8403_PAM8403 U 0 40 Y Y 1 F N
 F0 "U" 50 -100 60 H V C CNN
-F1 "pam8403:PAM8403" 50 150 60 H V C CNN
+F1 "pam8403_PAM8403" 50 150 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -789,11 +755,11 @@ X NC 9 -100 -950 300 U 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
-# sensors:MS5525DSO
+# sensors_MS5525DSO
 #
-DEF sensors:MS5525DSO U 0 40 Y Y 1 F N
+DEF sensors_MS5525DSO U 0 40 Y Y 1 F N
 F0 "U" 0 -450 60 H V C CNN
-F1 "sensors:MS5525DSO" 0 450 60 H V C CNN
+F1 "sensors_MS5525DSO" 0 450 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -815,11 +781,11 @@ X GND 9 600 -200 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# sensors:MS5611-01BA03
+# sensors_MS5611-01BA03
 #
-DEF sensors:MS5611-01BA03 IC 0 40 Y Y 1 F N
+DEF sensors_MS5611-01BA03 IC 0 40 Y Y 1 F N
 F0 "IC" -200 200 50 H V L CNN
-F1 "sensors:MS5611-01BA03" -200 -300 50 H V L CNN
+F1 "sensors_MS5611-01BA03" -200 -300 50 H V L CNN
 F2 "agg:MS5611" -200 -400 50 H I L CNN
 F3 "" 50 0 50 H I C CNN
 F4 "2362662" -200 -500 50 H I L CNN "Farnell"
