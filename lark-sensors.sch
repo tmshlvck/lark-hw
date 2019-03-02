@@ -77,7 +77,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 5000 9000 5000
 $Comp
-L Device:C C38
+L lark-rescue:C-Device C38
 U 1 1 5C572742
 P 10300 5550
 F 0 "C38" H 10415 5596 50  0000 L CNN
@@ -89,7 +89,7 @@ F 4 "885012207128" H 10300 5550 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C37
+L lark-rescue:C-Device C37
 U 1 1 5C572A29
 P 9600 5050
 F 0 "C37" H 9715 5096 50  0000 L CNN
@@ -108,7 +108,7 @@ Connection ~ 9600 4900
 Wire Wire Line
 	9350 5100 9000 5100
 $Comp
-L power:GND #PWR041
+L lark-rescue:GND-power #PWR041
 U 1 1 5C5732B7
 P 10300 5900
 F 0 "#PWR041" H 10300 5650 50  0001 C CNN
@@ -131,7 +131,7 @@ Connection ~ 9350 5400
 Wire Wire Line
 	9350 5400 9350 5200
 $Comp
-L power:GND #PWR040
+L lark-rescue:GND-power #PWR040
 U 1 1 5C5738F4
 P 9150 5600
 F 0 "#PWR040" H 9150 5350 50  0001 C CNN
@@ -147,7 +147,7 @@ Wire Wire Line
 	9150 5300 9150 5600
 NoConn ~ 7800 5200
 $Comp
-L Device:C C35
+L lark-rescue:C-Device C35
 U 1 1 5C5740F5
 P 2950 2500
 F 0 "C35" H 3065 2546 50  0000 L CNN
@@ -159,7 +159,7 @@ F 4 "885012207128" H 2950 2500 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C36
+L lark-rescue:C-Device C36
 U 1 1 5C5741B1
 P 2950 4750
 F 0 "C36" H 3065 4796 50  0000 L CNN
@@ -188,7 +188,7 @@ Connection ~ 3500 4600
 Wire Wire Line
 	3500 4600 3750 4600
 $Comp
-L power:GND #PWR039
+L lark-rescue:GND-power #PWR039
 U 1 1 5C575803
 P 3500 5100
 F 0 "#PWR039" H 3500 4850 50  0001 C CNN
@@ -199,7 +199,7 @@ F 3 "" H 3500 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR037
+L lark-rescue:GND-power #PWR037
 U 1 1 5C5758C5
 P 3500 3000
 F 0 "#PWR037" H 3500 2750 50  0001 C CNN
@@ -244,7 +244,7 @@ I2C1SDA
 Text HLabel 7000 2200 1    50   Input ~ 0
 I2C1CLK
 $Comp
-L power:GND #PWR038
+L lark-rescue:GND-power #PWR038
 U 1 1 5C58F414
 P 8400 3850
 F 0 "#PWR038" H 8400 3600 50  0001 C CNN
@@ -255,7 +255,7 @@ F 3 "" H 8400 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C34
+L lark-rescue:C-Device C34
 U 1 1 5C593811
 P 9200 1600
 F 0 "C34" H 9315 1646 50  0000 L CNN
@@ -267,7 +267,7 @@ F 4 "885012207128" H 9200 1600 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C33
+L lark-rescue:C-Device C33
 U 1 1 5C593886
 P 7850 1600
 F 0 "C33" H 7965 1646 50  0000 L CNN
@@ -281,7 +281,7 @@ $EndComp
 Text HLabel 8600 1300 1    50   Input ~ 0
 ACCELPWR
 $Comp
-L power:GND #PWR036
+L lark-rescue:GND-power #PWR036
 U 1 1 5C59D0F5
 P 9200 1800
 F 0 "#PWR036" H 9200 1550 50  0001 C CNN
@@ -292,7 +292,7 @@ F 3 "" H 9200 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR035
+L lark-rescue:GND-power #PWR035
 U 1 1 5C59D1AD
 P 7850 1800
 F 0 "#PWR035" H 7850 1550 50  0001 C CNN

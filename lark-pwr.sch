@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR?
+L lark-rescue:+5V-power #PWR?
 U 1 1 5C42BB67
 P 7850 1350
 AR Path="/5C42BB67" Ref="#PWR?"  Part="1" 
@@ -28,7 +28,7 @@ F 3 "" H 7850 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L lark-rescue:C-Device C?
 U 1 1 5C42BB6D
 P 8150 1500
 AR Path="/5C42BB6D" Ref="C?"  Part="1" 
@@ -53,7 +53,7 @@ Connection ~ 8800 1650
 Wire Wire Line
 	9100 1350 9500 1350
 $Comp
-L Device:C C?
+L lark-rescue:C-Device C?
 U 1 1 5C42BB7B
 P 9500 1500
 AR Path="/5C42BB7B" Ref="C?"  Part="1" 
@@ -70,7 +70,7 @@ Connection ~ 9500 1350
 Wire Wire Line
 	9500 1350 9950 1350
 $Comp
-L Device:C C?
+L lark-rescue:C-Device C?
 U 1 1 5C42BB84
 P 9950 1500
 AR Path="/5C42BB84" Ref="C?"  Part="1" 
@@ -92,7 +92,7 @@ Connection ~ 9500 1650
 Wire Wire Line
 	9500 1650 8800 1650
 $Comp
-L power:VDD #PWR?
+L lark-rescue:VDD-power #PWR?
 U 1 1 5C42BB90
 P 10300 1350
 AR Path="/5C42BB90" Ref="#PWR?"  Part="1" 
@@ -105,7 +105,7 @@ F 3 "" H 10300 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L lark-rescue:GND-power #PWR?
 U 1 1 5C42BC85
 P 8800 1850
 AR Path="/5C42BC85" Ref="#PWR?"  Part="1" 
@@ -118,7 +118,7 @@ F 3 "" H 8800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L lark-rescue:GND-power #PWR019
 U 1 1 5C53A890
 P 1350 1300
 F 0 "#PWR019" H 1350 1050 50  0001 C CNN
@@ -129,7 +129,7 @@ F 3 "" H 1350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Varistor RV1
+L lark-rescue:Varistor-Device RV1
 U 1 1 5C5396E1
 P 1750 1000
 F 0 "RV1" V 1492 1000 50  0000 C CNN
@@ -141,7 +141,7 @@ F 4 "0ZCF0300BF2C" V 1750 1000 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C8
+L lark-rescue:C-Device C8
 U 1 1 5C539CEA
 P 3200 1150
 F 0 "C8" H 3315 1196 50  0000 L CNN
@@ -153,7 +153,7 @@ F 4 "885012207128" H 3200 1150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L lark-rescue:C-Device C9
 U 1 1 5C539D44
 P 3800 1150
 F 0 "C9" H 3915 1196 50  0000 L CNN
@@ -165,7 +165,7 @@ F 4 "CL21B105KBFNNNG" H 3800 1150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead L1
+L lark-rescue:Ferrite_Bead-Device L1
 U 1 1 5C53A44D
 P 4500 1000
 F 0 "L1" V 4226 1000 50  0000 C CNN
@@ -177,7 +177,7 @@ F 4 "BLM31KN121SN1L" V 4500 1000 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C10
+L lark-rescue:CP-Device C10
 U 1 1 5C53A4E4
 P 5050 1150
 F 0 "C10" H 5168 1196 50  0000 L CNN
@@ -189,7 +189,7 @@ F 4 "UUE1H331MNS1MS" H 5050 1150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L lark-rescue:C-Device C11
 U 1 1 5C53A54F
 P 5650 1150
 F 0 "C11" H 5765 1196 50  0000 L CNN
@@ -201,7 +201,7 @@ F 4 "885012207128" H 5650 1150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L lark-rescue:C-Device C12
 U 1 1 5C53A5CA
 P 6200 1150
 F 0 "C12" H 6315 1196 50  0000 L CNN
@@ -253,7 +253,7 @@ Wire Wire Line
 	1350 1100 1350 1300
 Connection ~ 1350 1300
 $Comp
-L power:+12V #PWR016
+L lark-rescue:+12V-power #PWR016
 U 1 1 5C53DB37
 P 6600 1000
 F 0 "#PWR016" H 6600 850 50  0001 C CNN
@@ -267,7 +267,7 @@ Connection ~ 6600 1000
 Wire Wire Line
 	6600 1000 6800 1000
 $Comp
-L power:+5V #PWR021
+L lark-rescue:+5V-power #PWR021
 U 1 1 5C53E61A
 P 4950 1950
 F 0 "#PWR021" H 4950 1800 50  0001 C CNN
@@ -278,7 +278,7 @@ F 3 "" H 4950 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR022
+L lark-rescue:+12V-power #PWR022
 U 1 1 5C53E670
 P 1100 2000
 F 0 "#PWR022" H 1100 1850 50  0001 C CNN
@@ -289,7 +289,7 @@ F 3 "" H 1100 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
+L lark-rescue:GND-power #PWR024
 U 1 1 5C53E79D
 P 2750 2750
 F 0 "#PWR024" H 2750 2500 50  0001 C CNN
@@ -300,7 +300,7 @@ F 3 "" H 2750 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L3
+L lark-rescue:INDUCTOR-pspice L3
 U 1 1 5C53E9E4
 P 3850 2300
 F 0 "L3" H 3850 2515 50  0000 C CNN
@@ -312,7 +312,7 @@ F 4 "SRR1210A-470MCT-ND " H 3850 2300 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C16
+L lark-rescue:CP-Device C16
 U 1 1 5C53EA82
 P 4400 2450
 F 0 "C16" H 4518 2496 50  0000 L CNN
@@ -324,7 +324,7 @@ F 4 "493-16063-1-ND" H 4400 2450 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C17
+L lark-rescue:C-Device C17
 U 1 1 5C53EB34
 P 4950 2450
 F 0 "C17" H 5065 2496 50  0000 L CNN
@@ -336,7 +336,7 @@ F 4 "885012207128" H 4950 2450 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D5
+L lark-rescue:D_Schottky-Device D5
 U 1 1 5C53F38F
 P 3400 2450
 F 0 "D5" V 3354 2529 50  0000 L CNN
@@ -412,7 +412,7 @@ F 12 "Active" H 2250 4800 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C21
+L lark-rescue:C-Device C21
 U 1 1 5C54D321
 P 900 3850
 F 0 "C21" H 1015 3896 50  0000 L CNN
@@ -424,7 +424,7 @@ F 4 "CL21B105KBFNNNG" H 900 3850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR026
+L lark-rescue:+5V-power #PWR026
 U 1 1 5C54D45D
 P 900 3350
 F 0 "#PWR026" H 900 3200 50  0001 C CNN
@@ -437,7 +437,7 @@ $EndComp
 Text HLabel 4350 3600 2    50   Input ~ 0
 PSTATPWR
 $Comp
-L power:GND #PWR028
+L lark-rescue:GND-power #PWR028
 U 1 1 5C54D567
 P 2050 4100
 F 0 "#PWR028" H 2050 3850 50  0001 C CNN
@@ -448,7 +448,7 @@ F 3 "" H 2050 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C22
+L lark-rescue:C-Device C22
 U 1 1 5C54D5CF
 P 2550 3850
 F 0 "C22" H 2665 3896 50  0000 L CNN
@@ -460,7 +460,7 @@ F 4 "CL21B105KBFNNNG" H 2550 3850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C23
+L lark-rescue:C-Device C23
 U 1 1 5C54D68B
 P 3950 3850
 F 0 "C23" H 4065 3896 50  0000 L CNN
@@ -472,7 +472,7 @@ F 4 "CL21B105KBFNNNG" H 3950 3850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead L4
+L lark-rescue:Ferrite_Bead-Device L4
 U 1 1 5C54D8CC
 P 3250 3600
 F 0 "L4" V 2976 3600 50  0000 C CNN
@@ -543,7 +543,7 @@ F 12 "Active" H 2250 6150 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C27
+L lark-rescue:C-Device C27
 U 1 1 5C56106D
 P 900 5200
 F 0 "C27" H 1015 5246 50  0000 L CNN
@@ -555,7 +555,7 @@ F 4 "CL21B105KBFNNNG" H 900 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR031
+L lark-rescue:+5V-power #PWR031
 U 1 1 5C561073
 P 900 4700
 F 0 "#PWR031" H 900 4550 50  0001 C CNN
@@ -568,7 +568,7 @@ $EndComp
 Text HLabel 4350 4950 2    50   Input ~ 0
 PDIFPWR
 $Comp
-L power:GND #PWR033
+L lark-rescue:GND-power #PWR033
 U 1 1 5C56107A
 P 2050 5450
 F 0 "#PWR033" H 2050 5200 50  0001 C CNN
@@ -579,7 +579,7 @@ F 3 "" H 2050 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C28
+L lark-rescue:C-Device C28
 U 1 1 5C561080
 P 2550 5200
 F 0 "C28" H 2665 5246 50  0000 L CNN
@@ -591,7 +591,7 @@ F 4 "CL21B105KBFNNNG" H 2550 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C29
+L lark-rescue:C-Device C29
 U 1 1 5C561086
 P 3950 5200
 F 0 "C29" H 4065 5246 50  0000 L CNN
@@ -603,7 +603,7 @@ F 4 "CL21B105KBFNNNG" H 3950 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead L7
+L lark-rescue:Ferrite_Bead-Device L7
 U 1 1 5C56108C
 P 3250 4950
 F 0 "L7" V 2976 4950 50  0000 C CNN
@@ -674,7 +674,7 @@ F 12 "Active" H 6450 6150 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C24
+L lark-rescue:C-Device C24
 U 1 1 5C5634DD
 P 5100 5200
 F 0 "C24" H 5215 5246 50  0000 L CNN
@@ -686,7 +686,7 @@ F 4 "CL21B105KBFNNNG" H 5100 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR027
+L lark-rescue:+5V-power #PWR027
 U 1 1 5C5634E3
 P 5100 4700
 F 0 "#PWR027" H 5100 4550 50  0001 C CNN
@@ -699,7 +699,7 @@ $EndComp
 Text HLabel 8550 4950 2    50   Input ~ 0
 PDUSPWR
 $Comp
-L power:GND #PWR029
+L lark-rescue:GND-power #PWR029
 U 1 1 5C5634EA
 P 6250 5450
 F 0 "#PWR029" H 6250 5200 50  0001 C CNN
@@ -710,7 +710,7 @@ F 3 "" H 6250 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L lark-rescue:C-Device C25
 U 1 1 5C5634F0
 P 6750 5200
 F 0 "C25" H 6865 5246 50  0000 L CNN
@@ -722,7 +722,7 @@ F 4 "CL21B105KBFNNNG" H 6750 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C26
+L lark-rescue:C-Device C26
 U 1 1 5C5634F6
 P 8150 5200
 F 0 "C26" H 8265 5246 50  0000 L CNN
@@ -734,7 +734,7 @@ F 4 "CL21B105KBFNNNG" H 8150 5200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead L5
+L lark-rescue:Ferrite_Bead-Device L5
 U 1 1 5C5634FC
 P 7450 4950
 F 0 "L5" V 7176 4950 50  0000 C CNN
@@ -805,7 +805,7 @@ F 12 "Active" H 6450 4800 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
+L lark-rescue:C-Device C18
 U 1 1 5C56951F
 P 5100 3850
 F 0 "C18" H 5215 3896 50  0000 L CNN
@@ -817,7 +817,7 @@ F 4 "CL21B105KBFNNNG" H -1350 950 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR023
+L lark-rescue:+5V-power #PWR023
 U 1 1 5C569525
 P 5100 3350
 F 0 "#PWR023" H 5100 3200 50  0001 C CNN
@@ -830,7 +830,7 @@ $EndComp
 Text HLabel 8550 3600 2    50   Input ~ 0
 ACCELPWR
 $Comp
-L power:GND #PWR025
+L lark-rescue:GND-power #PWR025
 U 1 1 5C56952C
 P 6250 4100
 F 0 "#PWR025" H 6250 3850 50  0001 C CNN
@@ -841,7 +841,7 @@ F 3 "" H 6250 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C19
+L lark-rescue:C-Device C19
 U 1 1 5C569532
 P 6750 3850
 F 0 "C19" H 6865 3896 50  0000 L CNN
@@ -853,7 +853,7 @@ F 4 "CL21B105KBFNNNG" H -1350 950 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C20
+L lark-rescue:C-Device C20
 U 1 1 5C569538
 P 8150 3850
 F 0 "C20" H 8265 3896 50  0000 L CNN
@@ -865,7 +865,7 @@ F 4 "CL21B105KBFNNNG" H -1350 950 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead L2
+L lark-rescue:Ferrite_Bead-Device L2
 U 1 1 5C56953E
 P 7450 3600
 F 0 "L2" V 7176 3600 50  0000 C CNN
@@ -914,7 +914,7 @@ Wire Wire Line
 	5100 3700 5100 3600
 Connection ~ 5100 3600
 $Comp
-L Regulator_Switching:LM2596S-5 U2
+L lark-rescue:LM2596S-5-Regulator_Switching U2
 U 1 1 5C5806FE
 P 2750 2200
 F 0 "U2" H 2750 2567 50  0000 C CNN
@@ -926,7 +926,7 @@ F 4 "LM2596SX-5.0/NOPBCT-ND" H 50  -400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D3
+L lark-rescue:D_Schottky-Device D3
 U 1 1 5C5A21AF
 P 2750 1000
 F 0 "D3" H 2750 784 50  0000 C CNN
@@ -974,7 +974,7 @@ F 12 "Active" H 4650 7750 60  0001 L CNN "Status"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR034
+L lark-rescue:GND-power #PWR034
 U 1 1 5C5B50B6
 P 650 7550
 F 0 "#PWR034" H 650 7300 50  0001 C CNN
@@ -985,7 +985,7 @@ F 3 "" H 650 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR032
+L lark-rescue:+5V-power #PWR032
 U 1 1 5C5B51A7
 P 650 6850
 F 0 "#PWR032" H 650 6700 50  0001 C CNN
@@ -998,7 +998,7 @@ $EndComp
 Wire Wire Line
 	650  7500 650  7550
 $Comp
-L Device:C C30
+L lark-rescue:C-Device C30
 U 1 1 5C5C48EA
 P 650 7100
 F 0 "C30" H 765 7146 50  0000 L CNN
@@ -1011,7 +1011,7 @@ F 4 "885012207128" H 650 7100 50  0001 C CNN "MPN"
 $EndComp
 NoConn ~ 1500 7050
 $Comp
-L Device:C C31
+L lark-rescue:C-Device C31
 U 1 1 5C5E174B
 P 3200 7200
 F 0 "C31" H 3315 7246 50  0000 L CNN
@@ -1032,7 +1032,7 @@ Wire Wire Line
 	650  7250 650  7500
 Connection ~ 650  7500
 $Comp
-L Device:R R26
+L lark-rescue:R-Device R26
 U 1 1 5C60C329
 P 1200 7150
 F 0 "R26" H 1270 7196 50  0000 L CNN
@@ -1062,7 +1062,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 6650 1500 6650
 $Comp
-L Device:R R25
+L lark-rescue:R-Device R25
 U 1 1 5C62DF3A
 P 850 6150
 F 0 "R25" H 920 6196 50  0000 L CNN
@@ -1079,7 +1079,7 @@ Connection ~ 850  6850
 Wire Wire Line
 	850  6850 650  6850
 $Comp
-L Device:Ferrite_Bead L6
+L lark-rescue:Ferrite_Bead-Device L6
 U 1 1 5C63A448
 P 3500 6450
 F 0 "L6" V 3226 6450 50  0000 C CNN
@@ -1091,7 +1091,7 @@ F 4 "BLM31KN121SN1L" V 3500 6450 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C32
+L lark-rescue:C-Device C32
 U 1 1 5C63A750
 P 3750 7200
 F 0 "C32" H 3865 7246 50  0000 L CNN
@@ -1127,7 +1127,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 6650 3950 6650
 $Comp
-L Connector:Screw_Terminal_01x02 J4
+L lark-rescue:Screw_Terminal_01x02-Connector J4
 U 1 1 5C676D1E
 P 800 1000
 F 0 "J4" H 720 1217 50  0000 C CNN
@@ -1139,7 +1139,7 @@ F 4 "277-1721-ND" H 800 1000 50  0001 C CNN "MPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR030
+L lark-rescue:GND-power #PWR030
 U 1 1 5C754FF4
 P 4650 6050
 F 0 "#PWR030" H 4650 5800 50  0001 C CNN
@@ -1180,7 +1180,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 7050 3100 7050
 $Comp
-L power:PWR_FLAG #FLG01
+L lark-rescue:PWR_FLAG-power #FLG01
 U 1 1 5C7856F5
 P 1250 1000
 F 0 "#FLG01" H 1250 1075 50  0001 C CNN
@@ -1196,7 +1196,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 2300 4950 2300
 $Comp
-L Device:D_Zener D4
+L lark-rescue:D_Zener-Device D4
 U 1 1 5C78CD79
 P 2200 1150
 F 0 "D4" V 2154 1229 50  0000 L CNN

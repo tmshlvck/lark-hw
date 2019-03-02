@@ -35,7 +35,7 @@ F 12 "Active" H 3550 2750 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L lark-rescue:GND-power #PWR06
 U 1 1 5C429F76
 P 3350 4000
 F 0 "#PWR06" H 3350 3750 50  0001 C CNN
@@ -46,7 +46,7 @@ F 3 "" H 3350 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR01
+L lark-rescue:VDD-power #PWR01
 U 1 1 5C42AE71
 P 3550 950
 F 0 "#PWR01" H 3550 800 50  0001 C CNN
@@ -57,7 +57,7 @@ F 3 "" H 3550 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L lark-rescue:C-Device C1
 U 1 1 5C42AF26
 P 2100 1400
 F 0 "C1" V 1850 1350 50  0000 L CNN
@@ -80,7 +80,7 @@ F5 "PDIFPWR" I R 2900 5850 50
 F6 "PDUSPWR" I R 2900 6100 50 
 $EndSheet
 $Comp
-L power:GND #PWR03
+L lark-rescue:GND-power #PWR03
 U 1 1 5C42BE5E
 P 1800 1400
 F 0 "#PWR03" H 1800 1150 50  0001 C CNN
@@ -143,7 +143,7 @@ Wire Wire Line
 Text GLabel 2400 1350 1    50   Input ~ 0
 EN
 $Comp
-L Device:R R1
+L lark-rescue:R-Device R1
 U 1 1 5C4FD11A
 P 1650 1200
 F 0 "R1" H 1720 1246 50  0000 L CNN
@@ -191,7 +191,7 @@ Wire Wire Line
 	1500 1750 1650 1750
 Connection ~ 1650 1750
 $Comp
-L Device:C C2
+L lark-rescue:C-Device C2
 U 1 1 5C5007D1
 P 1250 1750
 F 0 "C2" V 998 1750 50  0000 C CNN
@@ -203,7 +203,7 @@ F 4 "885012207128" V 1250 1750 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR04
+L lark-rescue:GND-power #PWR04
 U 1 1 5C500861
 P 950 1800
 F 0 "#PWR04" H 950 1550 50  0001 C CNN
@@ -226,7 +226,7 @@ Wire Wire Line
 	1650 1000 2500 1000
 Connection ~ 2500 1000
 $Comp
-L Device:R R2
+L lark-rescue:R-Device R2
 U 1 1 5C501FFD
 P 2500 1200
 F 0 "R2" H 2570 1246 50  0000 L CNN
@@ -254,7 +254,7 @@ Wire Wire Line
 Text GLabel 1400 2450 0    50   Input ~ 0
 U1TXD
 $Comp
-L Device:R R13
+L lark-rescue:R-Device R13
 U 1 1 5C505E70
 P 1700 2200
 F 0 "R13" H 1770 2246 50  0000 L CNN
@@ -266,7 +266,7 @@ F 4 "RC0805FR-0710KL" H 1700 2200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L lark-rescue:R-Device R14
 U 1 1 5C505ED8
 P 1700 2700
 F 0 "R14" H 1770 2746 50  0000 L CNN
@@ -368,7 +368,7 @@ I2C1_SCK
 Text GLabel 6050 5700 2    50   Input ~ 0
 I2C1_SDA
 $Comp
-L Device:R R16
+L lark-rescue:R-Device R16
 U 1 1 5C5EB518
 P 4600 5100
 F 0 "R16" H 4530 5054 50  0000 R CNN
@@ -380,7 +380,7 @@ F 4 "RC0805FR-0710KL" H 4600 5100 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R17
+L lark-rescue:R-Device R17
 U 1 1 5C5EB606
 P 4950 5100
 F 0 "R17" H 4880 5054 50  0000 R CNN
@@ -392,7 +392,7 @@ F 4 "RC0805FR-0710KL" H 4950 5100 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VDD #PWR09
+L lark-rescue:VDD-power #PWR09
 U 1 1 5C5EB6C8
 P 4600 4800
 F 0 "#PWR09" H 4600 4650 50  0001 C CNN
@@ -409,7 +409,7 @@ SPIQ
 Text GLabel 6850 4650 3    50   Input ~ 0
 SPID
 $Comp
-L Device:R R24
+L lark-rescue:R-Device R24
 U 1 1 5C607182
 P 900 5850
 F 0 "R24" H 970 5896 50  0000 L CNN
@@ -421,7 +421,7 @@ F 4 "RT0805BRD07100KL" H 900 5850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L lark-rescue:C-Device C7
 U 1 1 5C607206
 P 1300 5850
 F 0 "C7" H 1415 5896 50  0000 L CNN
@@ -433,7 +433,7 @@ F 4 "885012207128" H 0   0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L lark-rescue:GND-power #PWR013
 U 1 1 5C60729B
 P 900 6200
 F 0 "#PWR013" H 900 5950 50  0001 C CNN
@@ -448,7 +448,7 @@ VSENS
 Wire Wire Line
 	900  5700 900  5600
 $Comp
-L Device:R R21
+L lark-rescue:R-Device R21
 U 1 1 5C61497E
 P 900 5350
 F 0 "R21" H 970 5396 50  0000 L CNN
@@ -466,7 +466,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 1650 4500 1650
 $Comp
-L Device:R R18
+L lark-rescue:R-Device R18
 U 1 1 5C63E997
 P 5300 5100
 F 0 "R18" H 5370 5146 50  0000 L CNN
@@ -490,7 +490,7 @@ I2C0_SCK
 Text GLabel 6050 6400 2    50   Input ~ 0
 I2C0_SDA
 $Comp
-L Device:R R20
+L lark-rescue:R-Device R20
 U 1 1 5C65297A
 P 7300 5100
 F 0 "R20" H 7370 5146 50  0000 L CNN
@@ -501,7 +501,7 @@ F 3 "~" H 7300 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R19
+L lark-rescue:R-Device R19
 U 1 1 5C6529D9
 P 5650 5100
 F 0 "R19" H 5720 5146 50  0000 L CNN
@@ -541,7 +541,7 @@ F8 "U2RXD" I L 8900 3900 50
 F9 "U2TXD" I L 8900 4100 50 
 $EndSheet
 $Comp
-L power:VDD #PWR010
+L lark-rescue:VDD-power #PWR010
 U 1 1 5C54DF15
 P 9600 5350
 F 0 "#PWR010" H 9600 5200 50  0001 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 9600 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L lark-rescue:GND-power #PWR012
 U 1 1 5C54DFCE
 P 9600 6000
 F 0 "#PWR012" H 9600 5750 50  0001 C CNN
@@ -567,7 +567,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 5400 9750 5400
 $Comp
-L Connector_Generic:Conn_01x06 J2
+L lark-rescue:Conn_01x06-Connector_Generic J2
 U 1 1 5C55381F
 P 9950 5600
 F 0 "J2" H 10030 5592 50  0000 L CNN
@@ -602,7 +602,7 @@ LED1
 Text GLabel 10650 1100 1    50   Input ~ 0
 LED2
 $Comp
-L Switch:SW_DPST_x2 SW4
+L lark-rescue:SW_DPST_x2-Switch SW4
 U 1 1 5C562635
 P 9000 1900
 F 0 "SW4" V 8954 1998 50  0000 L CNN
@@ -614,7 +614,7 @@ F 4 "277-1721-ND" V 9000 1900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L lark-rescue:SW_Push-Switch SW1
 U 1 1 5C562BE8
 P 5500 1900
 F 0 "SW1" V 5454 2048 50  0000 L CNN
@@ -626,7 +626,7 @@ F 4 "PTS645VH83-2 LFS" V 5500 1900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L lark-rescue:SW_Push-Switch SW2
 U 1 1 5C562CC3
 P 6700 1900
 F 0 "SW2" V 6654 2048 50  0000 L CNN
@@ -638,7 +638,7 @@ F 4 "PTS645VH83-2 LFS" V 6700 1900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L lark-rescue:R-Device R3
 U 1 1 5C562FAC
 P 5500 1400
 F 0 "R3" H 5430 1354 50  0000 R CNN
@@ -650,7 +650,7 @@ F 4 "RC0805FR-0710KL" H 5500 1400 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Switch:SW_Push SW3
+L lark-rescue:SW_Push-Switch SW3
 U 1 1 5C59ED05
 P 7850 1900
 F 0 "SW3" V 7804 2048 50  0000 L CNN
@@ -662,7 +662,7 @@ F 4 "PTS645VH83-2 LFS" V 7850 1900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R9
+L lark-rescue:R-Device R9
 U 1 1 5C5A20AC
 P 5850 1650
 F 0 "R9" V 5643 1650 50  0000 C CNN
@@ -674,7 +674,7 @@ F 4 "RC0805FR-0710KL" V 5850 1650 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C3
+L lark-rescue:C-Device C3
 U 1 1 5C5A2192
 P 6150 1900
 F 0 "C3" H 6265 1946 50  0000 L CNN
@@ -686,7 +686,7 @@ F 4 "885012207128" H 6150 1900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR02
+L lark-rescue:VDD-power #PWR02
 U 1 1 5C5A546A
 P 5500 950
 F 0 "#PWR02" H 5500 800 50  0001 C CNN
@@ -697,7 +697,7 @@ F 3 "" H 5500 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L lark-rescue:GND-power #PWR05
 U 1 1 5C5A551C
 P 5500 2300
 F 0 "#PWR05" H 5500 2050 50  0001 C CNN
@@ -733,7 +733,7 @@ Connection ~ 5500 2250
 Wire Wire Line
 	5500 2250 5500 2300
 $Comp
-L Device:R R4
+L lark-rescue:R-Device R4
 U 1 1 5C5C4642
 P 6700 1400
 F 0 "R4" H 6770 1446 50  0000 L CNN
@@ -745,7 +745,7 @@ F 4 "RC0805FR-0710KL" H 6700 1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L lark-rescue:R-Device R10
 U 1 1 5C5C47D3
 P 7050 1650
 F 0 "R10" V 6843 1650 50  0000 C CNN
@@ -757,7 +757,7 @@ F 4 "RC0805FR-0710KL" V 7050 1650 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C4
+L lark-rescue:C-Device C4
 U 1 1 5C5C4913
 P 7350 1900
 F 0 "C4" H 7465 1946 50  0000 L CNN
@@ -800,7 +800,7 @@ Wire Wire Line
 	7350 1550 7350 1650
 Connection ~ 7350 1650
 $Comp
-L Device:R R5
+L lark-rescue:R-Device R5
 U 1 1 5C5EF273
 P 7850 1400
 F 0 "R5" H 7920 1446 50  0000 L CNN
@@ -812,7 +812,7 @@ F 4 "RC0805FR-0710KL" H 7850 1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L lark-rescue:R-Device R11
 U 1 1 5C5EF3D3
 P 8200 1650
 F 0 "R11" V 7993 1650 50  0000 C CNN
@@ -824,7 +824,7 @@ F 4 "RC0805FR-0710KL" V 8200 1650 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C5
+L lark-rescue:C-Device C5
 U 1 1 5C5EF4B7
 P 8500 1900
 F 0 "C5" H 8615 1946 50  0000 L CNN
@@ -865,7 +865,7 @@ Wire Wire Line
 	7850 1000 6700 1000
 Connection ~ 6700 1000
 $Comp
-L Device:R R6
+L lark-rescue:R-Device R6
 U 1 1 5C60D434
 P 9000 1400
 F 0 "R6" H 9070 1446 50  0000 L CNN
@@ -877,7 +877,7 @@ F 4 "RC0805FR-0710KL" H 9000 1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R12
+L lark-rescue:R-Device R12
 U 1 1 5C60D552
 P 9400 1650
 F 0 "R12" V 9193 1650 50  0000 C CNN
@@ -889,7 +889,7 @@ F 4 "RC0805FR-0710KL" V 9400 1650 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C6
+L lark-rescue:C-Device C6
 U 1 1 5C60D6AA
 P 9750 1900
 F 0 "C6" H 9865 1946 50  0000 L CNN
@@ -930,7 +930,7 @@ Wire Wire Line
 	9750 1650 9750 1550
 Connection ~ 9750 1650
 $Comp
-L Device:LED D1
+L lark-rescue:LED-Device D1
 U 1 1 5C634D2B
 P 10200 1900
 F 0 "D1" V 10238 1783 50  0000 R CNN
@@ -942,7 +942,7 @@ F 4 "LTST-C150GKT" V 10200 1900 50  0001 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D2
+L lark-rescue:LED-Device D2
 U 1 1 5C63A623
 P 10650 1900
 F 0 "D2" V 10688 1783 50  0000 R CNN
@@ -964,7 +964,7 @@ Wire Wire Line
 	10650 2250 10650 2050
 Connection ~ 10200 2250
 $Comp
-L Device:R R7
+L lark-rescue:R-Device R7
 U 1 1 5C64A79A
 P 10200 1450
 F 0 "R7" H 10270 1496 50  0000 L CNN
@@ -976,7 +976,7 @@ F 4 "RC0805FR-07470RL" H 10200 1450 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L lark-rescue:R-Device R8
 U 1 1 5C64A8A6
 P 10650 1450
 F 0 "R8" H 10720 1496 50  0000 L CNN
@@ -996,7 +996,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 1750 10200 1600
 $Comp
-L Device:R R23
+L lark-rescue:R-Device R23
 U 1 1 5C67286C
 P 9150 5600
 F 0 "R23" V 8943 5600 50  0000 C CNN
@@ -1034,7 +1034,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 5600 1300 5700
 $Comp
-L Device:R R22
+L lark-rescue:R-Device R22
 U 1 1 5C6C8719
 P 1550 5600
 F 0 "R22" V 1343 5600 50  0000 C CNN
@@ -1051,7 +1051,7 @@ Connection ~ 1300 5600
 Wire Wire Line
 	1700 5600 1850 5600
 $Comp
-L Connector_Generic:Conn_01x07 J1
+L lark-rescue:Conn_01x07-Connector_Generic J1
 U 1 1 5C6997BC
 P 6750 4250
 F 0 "J1" V 6716 3862 50  0000 R CNN
@@ -1062,7 +1062,7 @@ F 3 "~" H 6750 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR011
+L lark-rescue:GND-power #PWR011
 U 1 1 5C6A0268
 P 7050 5450
 F 0 "#PWR011" H 7050 5200 50  0001 C CNN
@@ -1073,7 +1073,7 @@ F 3 "" H 7050 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR07
+L lark-rescue:VDD-power #PWR07
 U 1 1 5C6A0347
 P 6050 4450
 F 0 "#PWR07" H 6050 4300 50  0001 C CNN
@@ -1084,7 +1084,7 @@ F 3 "" H 6050 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
+L lark-rescue:+5V-power #PWR08
 U 1 1 5C6A04D5
 P 6250 4450
 F 0 "#PWR08" H 6250 4300 50  0001 C CNN
@@ -1191,7 +1191,7 @@ Connection ~ 7050 5250
 Wire Wire Line
 	7050 5250 7050 5450
 $Comp
-L Device:R R15
+L lark-rescue:R-Device R15
 U 1 1 5C7133A8
 P 6100 4950
 F 0 "R15" V 5893 4950 50  0000 C CNN
@@ -1203,7 +1203,7 @@ F 4 "RC0805FR-0710KL" V 6100 4950 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J3
+L lark-rescue:Conn_01x04-Connector_Generic J3
 U 1 1 5C71487D
 P 4850 7050
 F 0 "J3" V 4723 7230 50  0000 L CNN
@@ -1214,7 +1214,7 @@ F 3 "~" H 4850 7050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VDD #PWR014
+L lark-rescue:VDD-power #PWR014
 U 1 1 5C72D89B
 P 4950 6650
 F 0 "#PWR014" H 4950 6500 50  0001 C CNN
@@ -1225,7 +1225,7 @@ F 3 "" H 4950 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L lark-rescue:GND-power #PWR015
 U 1 1 5C72D962
 P 4350 6950
 F 0 "#PWR015" H 4350 6700 50  0001 C CNN
