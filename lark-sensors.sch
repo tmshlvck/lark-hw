@@ -186,65 +186,6 @@ Text HLabel 1050 2750 0    50   Input ~ 0
 I2C0CLK
 Text HLabel 1050 2650 0    50   Input ~ 0
 I2C0SDA
-$Comp
-L lark-rescue:GND-power #PWR038
-U 1 1 5C58F414
-P 8800 4750
-F 0 "#PWR038" H 8800 4500 50  0001 C CNN
-F 1 "GND" H 8805 4577 50  0000 C CNN
-F 2 "" H 8800 4750 50  0001 C CNN
-F 3 "" H 8800 4750 50  0001 C CNN
-	1    8800 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:C-Device C34
-U 1 1 5C593811
-P 9600 2500
-F 0 "C34" H 9715 2546 50  0000 L CNN
-F 1 "100n" H 9715 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9638 2350 50  0001 C CNN
-F 3 "~" H 9600 2500 50  0001 C CNN
-F 4 "885012207128" H 9600 2500 50  0001 C CNN "MPN"
-	1    9600 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:C-Device C33
-U 1 1 5C593886
-P 8250 2500
-F 0 "C33" H 8365 2546 50  0000 L CNN
-F 1 "100n" H 8365 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8288 2350 50  0001 C CNN
-F 3 "~" H 8250 2500 50  0001 C CNN
-F 4 "885012207128" H 8250 2500 50  0001 C CNN "MPN"
-	1    8250 2500
-	1    0    0    -1  
-$EndComp
-Text HLabel 9000 2200 1    50   Input ~ 0
-ACCELPWR
-$Comp
-L lark-rescue:GND-power #PWR036
-U 1 1 5C59D0F5
-P 9600 2700
-F 0 "#PWR036" H 9600 2450 50  0001 C CNN
-F 1 "GND" H 9605 2527 50  0000 C CNN
-F 2 "" H 9600 2700 50  0001 C CNN
-F 3 "" H 9600 2700 50  0001 C CNN
-	1    9600 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:GND-power #PWR035
-U 1 1 5C59D1AD
-P 8250 2700
-F 0 "#PWR035" H 8250 2450 50  0001 C CNN
-F 1 "GND" H 8255 2527 50  0000 C CNN
-F 2 "" H 8250 2700 50  0001 C CNN
-F 3 "" H 8250 2700 50  0001 C CNN
-	1    8250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 4200 6250 4200
 Wire Wire Line
@@ -274,54 +215,6 @@ Connection ~ 4800 1850
 Wire Wire Line
 	4800 1850 5350 1850
 NoConn ~ 3850 1650
-NoConn ~ 9750 3350
-NoConn ~ 9750 3200
-NoConn ~ 8100 4100
-NoConn ~ 8100 4400
-Wire Wire Line
-	9750 4100 10100 4100
-Wire Wire Line
-	10100 4100 10100 2300
-Wire Wire Line
-	8100 3350 7900 3350
-Wire Wire Line
-	7900 3350 7900 2300
-NoConn ~ 9750 3800
-NoConn ~ 9750 3950
-NoConn ~ 8100 3050
-NoConn ~ 8100 3200
-Wire Wire Line
-	7900 3350 7900 3950
-Wire Wire Line
-	7900 3950 8100 3950
-Connection ~ 7900 3350
-Wire Wire Line
-	8100 3500 7800 3500
-Wire Wire Line
-	7800 4750 8800 4750
-Wire Wire Line
-	8100 3800 7800 3800
-Wire Wire Line
-	7900 2300 8250 2300
-Wire Wire Line
-	8250 2350 8250 2300
-Connection ~ 8250 2300
-Wire Wire Line
-	8250 2700 8250 2650
-Wire Wire Line
-	9600 2350 9600 2300
-Connection ~ 9600 2300
-Wire Wire Line
-	9600 2300 10100 2300
-Wire Wire Line
-	9600 2650 9600 2700
-Wire Wire Line
-	8250 2300 9000 2300
-Wire Wire Line
-	9000 2200 9000 2300
-Connection ~ 9000 2300
-Wire Wire Line
-	9000 2300 9600 2300
 Wire Wire Line
 	3850 1850 3350 1850
 Wire Wire Line
@@ -720,58 +613,8 @@ Connection ~ 2500 2900
 Wire Wire Line
 	2500 2900 2500 2850
 Wire Wire Line
-	7800 3500 7800 3800
-Connection ~ 7800 3800
-Wire Wire Line
-	7800 3800 7800 4750
-Wire Wire Line
 	1050 2750 1300 2750
 Wire Wire Line
 	1300 2650 1050 2650
 NoConn ~ 1300 2850
-$Comp
-L lark-rescue:BMX055-bmx055 U8
-U 1 1 5C6812A2
-P 8900 3700
-AR Path="/5C6812A2" Ref="U8"  Part="1" 
-AR Path="/5C4F6DA1/5C6812A2" Ref="U8"  Part="1" 
-F 0 "U8" H 8925 4665 50  0000 C CNN
-F 1 "BMX055" H 8925 4574 50  0000 C CNN
-F 2 "BMX055:BMX055" H 9000 3700 50  0001 C CNN
-F 3 "" H 9000 3700 50  0001 C CNN
-F 4 "828-1060-1-ND " H 8900 3700 50  0001 C CNN "MPN"
-	1    8900 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 3650 7300 3650
-Wire Wire Line
-	9750 3650 10450 3650
-Wire Wire Line
-	9750 3500 9900 3500
-Wire Wire Line
-	9750 4400 10450 4400
-Wire Wire Line
-	9900 4250 9900 3500
-Wire Wire Line
-	9750 4250 9900 4250
-Wire Wire Line
-	9900 4250 10450 4250
-Connection ~ 9900 4250
-Text HLabel 10450 3650 2    50   Input ~ 0
-CS_ACC
-Text HLabel 7300 3650 0    50   Input ~ 0
-CS_GYR
-Text HLabel 10450 4250 2    50   Input ~ 0
-BMX_DO
-Text HLabel 10450 4400 2    50   Input ~ 0
-BMX_DI
-Wire Wire Line
-	8100 4250 7300 4250
-Text HLabel 7300 4250 0    50   Input ~ 0
-BMX_CK
-Text HLabel 10400 2550 2    50   Input ~ 0
-INT_ACC
-Text HLabel 10400 2900 2    50   Input ~ 0
-INT_GYR
 $EndSCHEMATC

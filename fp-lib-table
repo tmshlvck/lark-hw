@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name BMX055)(type Legacy)(uri ${KIPRJMOD}/libs/BMX055/BMX055.mod)(options "")(descr ""))
+  (lib (name libs)(type KiCad)(uri ${KIPRJMOD}/libs)(options "")(descr ""))
 )

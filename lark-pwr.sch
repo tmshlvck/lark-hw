@@ -563,7 +563,7 @@ F 4 "SK35" V 2750 1900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2300 3850 2100
+	3850 2300 3850 2150
 Connection ~ 2750 2600
 Wire Wire Line
 	2750 2600 2750 2750
@@ -719,4 +719,11 @@ Wire Wire Line
 Connection ~ 8150 1250
 Text HLabel 2100 2300 0    50   Input ~ 0
 PWRIN
+Wire Wire Line
+	3850 2150 4400 2150
+Connection ~ 3850 2150
+Wire Wire Line
+	3850 2150 3850 2100
+Text HLabel 4400 2150 2    50   Input ~ 0
++5V
 $EndSCHEMATC
