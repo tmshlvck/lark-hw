@@ -106,179 +106,31 @@ F 3 "" H 8800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L lark-rescue:Ferrite_Bead-Device L1
-U 1 1 5C53A44D
-P 4500 1000
-F 0 "L1" V 4226 1000 50  0000 C CNN
-F 1 "6A max." V 4317 1000 50  0000 C CNN
-F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 1000 50  0001 C CNN
-F 3 "~" H 4500 1000 50  0001 C CNN
-F 4 "BLM31KN121SN1L" V 4500 1000 50  0001 C CNN "MPN"
-	1    4500 1000
-	0    1    1    0   
-$EndComp
-$Comp
 L lark-rescue:C-Device C12
 U 1 1 5C53A5CA
-P 6200 1150
-F 0 "C12" H 6315 1196 50  0000 L CNN
-F 1 "1u" H 6315 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6238 1000 50  0001 C CNN
-F 3 "~" H 6200 1150 50  0001 C CNN
-F 4 "CL21B105KBFNNNG" H 6200 1150 50  0001 C CNN "MPN"
-	1    6200 1150
+P 5550 1150
+F 0 "C12" H 5665 1196 50  0000 L CNN
+F 1 "10u" H 5665 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 1000 50  0001 C CNN
+F 3 "~" H 5550 1150 50  0001 C CNN
+F 4 "CL21B105KBFNNNG" H 5550 1150 50  0001 C CNN "MPN"
+	1    5550 1150
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 1000 2    50   Input ~ 0
+Text HLabel 6150 1000 2    50   Input ~ 0
 PWRIN
-Wire Wire Line
-	6200 1000 6600 1000
-Connection ~ 6200 1000
+Connection ~ 5550 1000
 $Comp
 L lark-rescue:+12V-power #PWR016
 U 1 1 5C53DB37
-P 6600 1000
-F 0 "#PWR016" H 6600 850 50  0001 C CNN
-F 1 "+12V" H 6615 1173 50  0000 C CNN
-F 2 "" H 6600 1000 50  0001 C CNN
-F 3 "" H 6600 1000 50  0001 C CNN
-	1    6600 1000
+P 2450 900
+F 0 "#PWR016" H 2450 750 50  0001 C CNN
+F 1 "+12V" H 2465 1073 50  0000 C CNN
+F 2 "" H 2450 900 50  0001 C CNN
+F 3 "" H 2450 900 50  0001 C CNN
+	1    2450 900 
 	1    0    0    -1  
 $EndComp
-Connection ~ 6600 1000
-Wire Wire Line
-	6600 1000 6800 1000
-$Comp
-L lark-rescue:MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear U4
-U 1 1 5C54D1B9
-P 2050 3600
-AR Path="/5C54D1B9" Ref="U4"  Part="1" 
-AR Path="/5C42B39D/5C54D1B9" Ref="U4"  Part="1" 
-F 0 "U4" H 2050 3887 60  0000 C CNN
-F 1 "MCP1700T-3302E_TT" H 2050 3781 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2250 3800 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 2250 3900 60  0001 L CNN
-F 4 "MCP1700T3302ETTCT-ND" H 2250 4000 60  0001 L CNN "Digi-Key_PN"
-F 5 "MCP1700T-3302E/TT" H 2250 4100 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 2250 4200 60  0001 L CNN "Category"
-F 7 "PMIC - Voltage Regulators - Linear" H 2250 4300 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 2250 4400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" H 2250 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC REG LINEAR 3.3V 250MA SOT23-3" H 2250 4600 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 2250 4700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2250 4800 60  0001 L CNN "Status"
-	1    2050 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:C-Device C21
-U 1 1 5C54D321
-P 900 3850
-F 0 "C21" H 1015 3896 50  0000 L CNN
-F 1 "1u" H 1015 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 938 3700 50  0001 C CNN
-F 3 "~" H 900 3850 50  0001 C CNN
-F 4 "CL21B105KBFNNNG" H 900 3850 50  0001 C CNN "MPN"
-	1    900  3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:+5V-power #PWR026
-U 1 1 5C54D45D
-P 900 3350
-F 0 "#PWR026" H 900 3200 50  0001 C CNN
-F 1 "+5V" H 915 3523 50  0000 C CNN
-F 2 "" H 900 3350 50  0001 C CNN
-F 3 "" H 900 3350 50  0001 C CNN
-	1    900  3350
-	1    0    0    -1  
-$EndComp
-Text HLabel 4350 3600 2    50   Input ~ 0
-SENSPWR
-$Comp
-L lark-rescue:GND-power #PWR028
-U 1 1 5C54D567
-P 2050 4100
-F 0 "#PWR028" H 2050 3850 50  0001 C CNN
-F 1 "GND" H 2055 3927 50  0000 C CNN
-F 2 "" H 2050 4100 50  0001 C CNN
-F 3 "" H 2050 4100 50  0001 C CNN
-	1    2050 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:C-Device C22
-U 1 1 5C54D5CF
-P 2550 3850
-F 0 "C22" H 2665 3896 50  0000 L CNN
-F 1 "1u" H 2665 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2588 3700 50  0001 C CNN
-F 3 "~" H 2550 3850 50  0001 C CNN
-F 4 "CL21B105KBFNNNG" H 2550 3850 50  0001 C CNN "MPN"
-	1    2550 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:C-Device C23
-U 1 1 5C54D68B
-P 3950 3850
-F 0 "C23" H 4065 3896 50  0000 L CNN
-F 1 "1u" H 4065 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3988 3700 50  0001 C CNN
-F 3 "~" H 3950 3850 50  0001 C CNN
-F 4 "CL21B105KBFNNNG" H 3950 3850 50  0001 C CNN "MPN"
-	1    3950 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L lark-rescue:Ferrite_Bead-Device L4
-U 1 1 5C54D8CC
-P 3250 3600
-F 0 "L4" V 2976 3600 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3067 3600 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3180 3600 50  0001 C CNN
-F 3 "~" H 3250 3600 50  0001 C CNN
-F 4 "BLM21BD272SH1L" V 3250 3600 50  0001 C CNN "MPN"
-	1    3250 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	900  3350 900  3600
-Wire Wire Line
-	1750 3600 900  3600
-Wire Wire Line
-	900  4100 2050 4100
-Wire Wire Line
-	2050 4100 2050 3900
-Connection ~ 2050 4100
-Wire Wire Line
-	2050 4100 2550 4100
-Wire Wire Line
-	2350 3600 2550 3600
-Wire Wire Line
-	3400 3600 3950 3600
-Wire Wire Line
-	3950 3700 3950 3600
-Connection ~ 3950 3600
-Wire Wire Line
-	3950 3600 4350 3600
-Wire Wire Line
-	3950 4000 3950 4100
-Wire Wire Line
-	2550 4000 2550 4100
-Connection ~ 2550 4100
-Wire Wire Line
-	2550 4100 3950 4100
-Wire Wire Line
-	2550 3700 2550 3600
-Connection ~ 2550 3600
-Wire Wire Line
-	2550 3600 3100 3600
-Wire Wire Line
-	900  4100 900  4000
-Wire Wire Line
-	900  3700 900  3600
-Connection ~ 900  3600
 $Comp
 L lark-rescue:MCP1700T-3302E_TT-dk_PMIC-Voltage-Regulators-Linear U3
 U 1 1 5C569519
@@ -413,26 +265,6 @@ Connection ~ 5100 3600
 Wire Notes Line
 	700  3050 9050 3050
 Wire Wire Line
-	1350 1300 2200 1300
-Connection ~ 2200 1300
-Wire Wire Line
-	2200 1000 2600 1000
-Wire Wire Line
-	1900 1000 2200 1000
-Connection ~ 2200 1000
-$Comp
-L lark-rescue:D_Zener-Device D4
-U 1 1 5C78CD79
-P 2200 1150
-F 0 "D4" V 2154 1229 50  0000 L CNN
-F 1 "16V" V 2245 1229 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 2200 1150 50  0001 C CNN
-F 3 "~" H 2200 1150 50  0001 C CNN
-F 4 "SMBJ16A-TR" V 2200 1150 50  0001 C CNN "MPN"
-	1    2200 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
 	1250 1000 1600 1000
 $Comp
 L lark-rescue:PWR_FLAG-power #FLG01
@@ -457,18 +289,6 @@ F 4 "277-1721-ND" H 800 1000 50  0001 C CNN "MPN"
 	1    800  1000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L lark-rescue:D_Schottky-Device D3
-U 1 1 5C5A21AF
-P 2750 1000
-F 0 "D3" H 2750 784 50  0000 C CNN
-F 1 "50V/3A" H 2750 875 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 2750 1000 50  0001 C CNN
-F 3 "~" H 2750 1000 50  0001 C CNN
-F 4 "SK35" H 2750 1000 50  0001 C CNN "MPN"
-	1    2750 1000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1350 1100 1350 1300
 Wire Wire Line
@@ -485,7 +305,7 @@ L lark-rescue:C-Device C9
 U 1 1 5C539D44
 P 3800 1150
 F 0 "C9" H 3915 1196 50  0000 L CNN
-F 1 "1u" H 3915 1105 50  0000 L CNN
+F 1 "10u" H 3915 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3838 1000 50  0001 C CNN
 F 3 "~" H 3800 1150 50  0001 C CNN
 F 4 "CL21B105KBFNNNG" H 3800 1150 50  0001 C CNN "MPN"
@@ -493,12 +313,12 @@ F 4 "CL21B105KBFNNNG" H 3800 1150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L lark-rescue:Varistor-Device RV1
+L Device:Polyfuse F1
 U 1 1 5C5396E1
 P 1750 1000
-F 0 "RV1" V 1492 1000 50  0000 C CNN
+F 0 "F1" V 1492 1000 50  0000 C CNN
 F 1 "3A/24V" V 1583 1000 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder" V 1680 1000 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 1680 1000 50  0001 C CNN
 F 3 "~" H 1750 1000 50  0001 C CNN
 F 4 "0ZCF0300BF2C" V 1750 1000 50  0001 C CNN "MPN"
 	1    1750 1000
@@ -556,7 +376,7 @@ U 1 1 5C53F38F
 P 2750 1900
 F 0 "D5" V 2704 1979 50  0000 L CNN
 F 1 "50V/3A" V 2795 1979 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 2750 1900 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 2750 1900 50  0001 C CNN
 F 3 "~" H 2750 1900 50  0001 C CNN
 F 4 "SK35" V 2750 1900 50  0001 C CNN "MPN"
 	1    2750 1900
@@ -581,53 +401,39 @@ $EndComp
 Wire Wire Line
 	2450 2300 2200 2300
 Connection ~ 3850 2300
-Wire Wire Line
-	5050 1300 3800 1300
-Connection ~ 5050 1300
-Wire Wire Line
-	4650 1000 5050 1000
-Connection ~ 5050 1000
 $Comp
 L lark-rescue:CP-Device C10
 U 1 1 5C53A4E4
-P 5050 1150
-F 0 "C10" H 5168 1196 50  0000 L CNN
-F 1 "330u" H 5168 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 5088 1000 50  0001 C CNN
-F 3 "~" H 5050 1150 50  0001 C CNN
-F 4 "UUE1H331MNS1MS" H 5050 1150 50  0001 C CNN "MPN"
-	1    5050 1150
+P 2750 1150
+F 0 "C10" H 2868 1196 50  0000 L CNN
+F 1 "330u" H 2868 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 2788 1000 50  0001 C CNN
+F 3 "~" H 2750 1150 50  0001 C CNN
+F 4 "UUE1H331MNS1MS" H 2750 1150 50  0001 C CNN "MPN"
+	1    2750 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1300 5050 1300
+	5550 1300 5000 1300
+Connection ~ 5000 1300
 Wire Wire Line
-	6200 1300 5650 1300
-Connection ~ 5650 1300
-Wire Wire Line
-	5650 1000 6200 1000
-Wire Wire Line
-	5050 1000 5650 1000
-Connection ~ 5650 1000
+	5000 1000 5550 1000
+Connection ~ 5000 1000
 $Comp
 L lark-rescue:C-Device C11
 U 1 1 5C53A54F
-P 5650 1150
-F 0 "C11" H 5765 1196 50  0000 L CNN
-F 1 "100n" H 5765 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5688 1000 50  0001 C CNN
-F 3 "~" H 5650 1150 50  0001 C CNN
-F 4 "885012207128" H 5650 1150 50  0001 C CNN "MPN"
-	1    5650 1150
+P 5000 1150
+F 0 "C11" H 5115 1196 50  0000 L CNN
+F 1 "100n" H 5115 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 1000 50  0001 C CNN
+F 3 "~" H 5000 1150 50  0001 C CNN
+F 4 "885012207128" H 5000 1150 50  0001 C CNN "MPN"
+	1    5000 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3800 1300 3200 1300
-Wire Wire Line
-	2200 1300 3200 1300
 Connection ~ 3200 1300
-Wire Wire Line
-	2900 1000 3200 1000
 Wire Wire Line
 	3200 1000 3800 1000
 Connection ~ 3200 1000
@@ -726,4 +532,56 @@ Wire Wire Line
 	3850 2150 3850 2100
 Text HLabel 4400 2150 2    50   Input ~ 0
 +5V
+Wire Wire Line
+	2200 1300 2750 1300
+Wire Wire Line
+	1350 1300 2200 1300
+Connection ~ 2200 1300
+Wire Wire Line
+	1900 1000 2200 1000
+Connection ~ 2200 1000
+$Comp
+L lark-rescue:D_Zener-Device D4
+U 1 1 5C78CD79
+P 2200 1150
+F 0 "D4" V 2154 1229 50  0000 L CNN
+F 1 "16V" V 2245 1229 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 2200 1150 50  0001 C CNN
+F 3 "~" H 2200 1150 50  0001 C CNN
+F 4 "SMBJ16A-TR" V 2200 1150 50  0001 C CNN "MPN"
+	1    2200 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 1000 2450 1000
+$Comp
+L Device:L L1
+U 1 1 5C84C1F3
+P 4500 1000
+F 0 "L1" V 4690 1000 50  0000 C CNN
+F 1 "10uH" V 4599 1000 50  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_WE-PD2-Typ-L" H 4500 1000 50  0001 C CNN
+F 3 "~" H 4500 1000 50  0001 C CNN
+	1    4500 1000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2750 1000
+Wire Wire Line
+	2750 1000 3200 1000
+Connection ~ 2750 1300
+Wire Wire Line
+	2750 1300 3200 1300
+Wire Wire Line
+	4650 1000 5000 1000
+Wire Wire Line
+	3800 1300 5000 1300
+Wire Wire Line
+	2450 900  2450 1000
+Wire Wire Line
+	5550 1000 6150 1000
+Connection ~ 2450 1000
+Wire Wire Line
+	2450 1000 2750 1000
+Text Label 5950 1000 1    50   ~ 0
+PWRIN
 $EndSCHEMATC

@@ -95,10 +95,10 @@ F 12 "Active" H 9350 4750 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L lark-rescue:Polyfuse-Device F2
+L lark-rescue:Polyfuse-Device F3
 U 1 1 5C55A114
 P 8300 3250
-F 0 "F2" V 8075 3250 50  0000 C CNN
+F 0 "F3" V 8075 3250 50  0000 C CNN
 F 1 "1.25A/16V" V 8166 3250 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 8350 3050 50  0001 L CNN
 F 3 "~" H 8300 3250 50  0001 C CNN
@@ -275,10 +275,10 @@ F 4 "885012207128" V 6400 2600 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L lark-rescue:Polyfuse-Device F1
+L lark-rescue:Polyfuse-Device F2
 U 1 1 5C55DC01
 P 8300 1750
-F 0 "F1" V 8075 1750 50  0000 C CNN
+F 0 "F2" V 8075 1750 50  0000 C CNN
 F 1 "1.25A/16V" V 8166 1750 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 8350 1550 50  0001 L CNN
 F 3 "~" H 8300 1750 50  0001 C CNN
