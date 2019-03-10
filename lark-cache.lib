@@ -1,20 +1,17 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x20
+# Connector_Generic_Conn_01x15
 #
-DEF Connector_Generic_Conn_01x20 J 0 40 Y N 1 F N
-F0 "J" 0 1000 50 H V C CNN
-F1 "Connector_Generic_Conn_01x20" 0 -1100 50 H V C CNN
+DEF Connector_Generic_Conn_01x15 J 0 40 Y N 1 F N
+F0 "J" 0 800 50 H V C CNN
+F1 "Connector_Generic_Conn_01x15" 0 -800 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
-S -50 -995 0 -1005 1 1 6 N
-S -50 -895 0 -905 1 1 6 N
-S -50 -795 0 -805 1 1 6 N
 S -50 -695 0 -705 1 1 6 N
 S -50 -595 0 -605 1 1 6 N
 S -50 -495 0 -505 1 1 6 N
@@ -30,29 +27,39 @@ S -50 405 0 395 1 1 6 N
 S -50 505 0 495 1 1 6 N
 S -50 605 0 595 1 1 6 N
 S -50 705 0 695 1 1 6 N
-S -50 805 0 795 1 1 6 N
-S -50 905 0 895 1 1 6 N
-S -50 950 50 -1050 1 1 10 f
-X Pin_1 1 -200 900 150 R 50 50 1 1 P
-X Pin_10 10 -200 0 150 R 50 50 1 1 P
-X Pin_11 11 -200 -100 150 R 50 50 1 1 P
-X Pin_12 12 -200 -200 150 R 50 50 1 1 P
-X Pin_13 13 -200 -300 150 R 50 50 1 1 P
-X Pin_14 14 -200 -400 150 R 50 50 1 1 P
-X Pin_15 15 -200 -500 150 R 50 50 1 1 P
-X Pin_16 16 -200 -600 150 R 50 50 1 1 P
-X Pin_17 17 -200 -700 150 R 50 50 1 1 P
-X Pin_18 18 -200 -800 150 R 50 50 1 1 P
-X Pin_19 19 -200 -900 150 R 50 50 1 1 P
-X Pin_2 2 -200 800 150 R 50 50 1 1 P
-X Pin_20 20 -200 -1000 150 R 50 50 1 1 P
-X Pin_3 3 -200 700 150 R 50 50 1 1 P
-X Pin_4 4 -200 600 150 R 50 50 1 1 P
-X Pin_5 5 -200 500 150 R 50 50 1 1 P
-X Pin_6 6 -200 400 150 R 50 50 1 1 P
-X Pin_7 7 -200 300 150 R 50 50 1 1 P
-X Pin_8 8 -200 200 150 R 50 50 1 1 P
-X Pin_9 9 -200 100 150 R 50 50 1 1 P
+S -50 750 50 -750 1 1 10 f
+X Pin_1 1 -200 700 150 R 50 50 1 1 P
+X Pin_10 10 -200 -200 150 R 50 50 1 1 P
+X Pin_11 11 -200 -300 150 R 50 50 1 1 P
+X Pin_12 12 -200 -400 150 R 50 50 1 1 P
+X Pin_13 13 -200 -500 150 R 50 50 1 1 P
+X Pin_14 14 -200 -600 150 R 50 50 1 1 P
+X Pin_15 15 -200 -700 150 R 50 50 1 1 P
+X Pin_2 2 -200 600 150 R 50 50 1 1 P
+X Pin_3 3 -200 500 150 R 50 50 1 1 P
+X Pin_4 4 -200 400 150 R 50 50 1 1 P
+X Pin_5 5 -200 300 150 R 50 50 1 1 P
+X Pin_6 6 -200 200 150 R 50 50 1 1 P
+X Pin_7 7 -200 100 150 R 50 50 1 1 P
+X Pin_8 8 -200 0 150 R 50 50 1 1 P
+X Pin_9 9 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -166,6 +173,21 @@ X SC0 6 500 600 100 L 50 50 1 1 B
 X ~INT1 7 500 100 100 L 50 50 1 1 I
 X SD1 8 500 300 100 L 50 50 1 1 B
 X SC1 9 500 200 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -370,62 +392,6 @@ X Pin_2 2 -200 100 150 R 50 50 1 1 P
 X Pin_3 3 -200 0 150 R 50 50 1 1 P
 X Pin_4 4 -200 -100 150 R 50 50 1 1 P
 X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# lark-rescue_Conn_01x06-Connector_Generic
-#
-DEF lark-rescue_Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "lark-rescue_Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -295 0 -305 1 1 6 N
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -350 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-X Pin_6 6 -200 -300 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# lark-rescue_Conn_01x07-Connector_Generic
-#
-DEF lark-rescue_Conn_01x07-Connector_Generic J 0 40 Y N 1 F N
-F0 "J" 0 400 50 H V C CNN
-F1 "lark-rescue_Conn_01x07-Connector_Generic" 0 -400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -295 0 -305 1 1 6 N
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 305 0 295 1 1 6 N
-S -50 350 50 -350 1 1 10 f
-X Pin_1 1 -200 300 150 R 50 50 1 1 P
-X Pin_2 2 -200 200 150 R 50 50 1 1 P
-X Pin_3 3 -200 100 150 R 50 50 1 1 P
-X Pin_4 4 -200 0 150 R 50 50 1 1 P
-X Pin_5 5 -200 -100 150 R 50 50 1 1 P
-X Pin_6 6 -200 -200 150 R 50 50 1 1 P
-X Pin_7 7 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -742,41 +708,6 @@ X R 3 400 100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lark-rescue_SW_DPST_x2-Switch
-#
-DEF lark-rescue_SW_DPST_x2-Switch SW 0 0 Y N 2 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "lark-rescue_SW_DPST_x2-Switch" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
-X A 3 -200 0 100 R 50 50 2 1 I
-X B 4 200 0 100 L 50 50 2 1 I
-ENDDRAW
-ENDDEF
-#
-# lark-rescue_SW_Push-Switch
-#
-DEF lark-rescue_SW_Push-Switch SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "lark-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # lark-rescue_Screw_Terminal_01x02-Connector
 #
 DEF lark-rescue_Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
@@ -869,6 +800,34 @@ X GNDIO 6 650 -500 200 L 50 50 1 1 W
 X PS 7 -650 -400 200 R 50 50 1 1 I
 X SCK 8 -650 500 200 R 50 50 1 1 I
 X SDI 9 -650 400 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# sensors_BMP388
+#
+DEF sensors_BMP388 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "sensors_BMP388" 1050 200 50 H V L CNN
+F2 "BMP388" 1050 100 50 H I L CNN
+F3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001-01.pdf" 1050 0 50 H I L CNN
+F4 "Board Mount Pressure Sensors MEMS Absolute Barometric Pressure Sensor" 1050 -100 50 H I L CNN "Description"
+F5 "0" 1050 -200 50 H I L CNN "Height"
+F6 "Bosch Sensortec" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BMP388" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "262-BMP388" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=262-BMP388" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -500 200 -500 200 100 N
+X VDDIO 1 0 0 200 R 50 50 0 0 B
+X VDD 10 1200 -400 200 L 50 50 0 0 B
+X SCK 2 0 -100 200 R 50 50 0 0 B
+X VSS_1 3 0 -200 200 R 50 50 0 0 B
+X SDI 4 0 -300 200 R 50 50 0 0 B
+X SDO 5 0 -400 200 R 50 50 0 0 B
+X CSB 6 1200 0 200 L 50 50 0 0 B
+X INT 7 1200 -100 200 L 50 50 0 0 B
+X VSS_2 8 1200 -200 200 L 50 50 0 0 B
+X VSS_3 9 1200 -300 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
