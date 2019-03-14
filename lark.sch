@@ -705,10 +705,10 @@ Wire Wire Line
 	2600 2100 3250 2100
 Wire Wire Line
 	2650 3200 3250 3200
-Text GLabel 2650 3200 0    50   Input ~ 0
-INT_GYR
 Text GLabel 2600 2100 0    50   Input ~ 0
-INT_ACC
+INT_SENS
+Text GLabel 2650 3200 0    50   Input ~ 0
+INT_IMU
 $Comp
 L lark-rescue:VDD-power #PWR0107
 U 1 1 5C7C78FA
@@ -1079,7 +1079,6 @@ F 3 "" H 6300 2900 50  0001 C CNN
 	1    6300 2900
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 6450 3000
 Wire Wire Line
 	6250 3300 6450 3300
 Text GLabel 6300 3200 0    50   Input ~ 0
@@ -1176,4 +1175,8 @@ Wire Wire Line
 Wire Wire Line
 	8850 4550 9100 4550
 Connection ~ 8850 4550
+Wire Wire Line
+	6450 3000 6300 3000
+Text GLabel 6300 3000 0    50   Input ~ 0
+INT_SENS
 $EndSCHEMATC
