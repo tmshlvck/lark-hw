@@ -1,6 +1,7 @@
 (sym_lib_table
   (lib (name pam8403)(type Legacy)(uri ${KIPRJMOD}/libs/pam8403.lib)(options "")(descr ""))
   (lib (name sensors)(type Legacy)(uri ${KIPRJMOD}/libs/sensors.lib)(options "")(descr ""))
-  (lib (name tps2511)(type Legacy)(uri /home/th/projects/lark/lark-hw/libs/tps2511.lib)(options "")(descr ""))
-  (lib (name bmx055)(type Legacy)(uri /home/th/projects/lark/lark-hw/libs/bmx055.lib)(options "")(descr ""))
+  (lib (name tps2511)(type Legacy)(uri ${KIPRJMOD}/libs/tps2511.lib)(options "")(descr ""))
+  (lib (name bmx055)(type Legacy)(uri ${KIPRJMOD}/libs/bmx055.lib)(options "")(descr ""))
+  (lib (name lark-rescue)(type Legacy)(uri ${KIPRJMOD}/lark-rescue.lib)(options "")(descr ""))
 )

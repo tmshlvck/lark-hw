@@ -22,10 +22,6 @@ Text HLabel 1300 2350 0    50   Input ~ 0
 U1RXD
 Text HLabel 1300 2700 0    50   Input ~ 0
 U1TXD
-Text HLabel 1300 3050 0    50   Input ~ 0
-U1RTS
-Text HLabel 1300 3400 0    50   Input ~ 0
-U1CTS
 Text HLabel 1300 3750 0    50   Input ~ 0
 U2RXD
 Text HLabel 1300 4100 0    50   Input ~ 0
@@ -43,7 +39,7 @@ F 4 "PAM8403DR" H 3650 6150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_UART:MAX3232 U10
+L lark-rescue:MAX3232-Interface_UART U10
 U 1 1 5C6D5FF8
 P 4800 2600
 F 0 "U10" H 4350 1500 50  0000 C CNN
@@ -55,12 +51,14 @@ F 4 "MAX3232ECDR" H 4800 2600 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Modular-Connectors-Jacks:54602-908LF J7
+L lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks J7
 U 1 1 5C6D6815
 P 9150 2050
+AR Path="/5C6D6815" Ref="J7"  Part="1" 
+AR Path="/5C549AF9/5C6D6815" Ref="J7"  Part="1" 
 F 0 "J7" V 9246 1595 50  0000 R CNN
 F 1 "54602-908LF" V 9155 1595 50  0000 R CNN
-F 2 "digikey-footprints:Ethernet_Jack_54602-908LF" H 9350 2250 50  0001 L CNN
+F 2 "libs:634108185521" H 9350 2250 50  0001 L CNN
 F 3 "" H 9350 2350 60  0001 L CNN
 F 4 "609-1046-ND" H 9350 2450 60  0001 L CNN "Digi-Key_PN"
 F 5 "54602-908LF" H 9350 2550 60  0001 L CNN "MPN"
@@ -75,12 +73,14 @@ F 12 "Active" H 9350 3250 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Modular-Connectors-Jacks:54602-908LF J8
+L lark-rescue:54602-908LF-dk_Modular-Connectors-Jacks J8
 U 1 1 5C6D6947
 P 9150 3550
+AR Path="/5C6D6947" Ref="J8"  Part="1" 
+AR Path="/5C549AF9/5C6D6947" Ref="J8"  Part="1" 
 F 0 "J8" V 9246 3095 50  0000 R CNN
 F 1 "54602-908LF" V 9155 3095 50  0000 R CNN
-F 2 "digikey-footprints:Ethernet_Jack_54602-908LF" H 9350 3750 50  0001 L CNN
+F 2 "libs:634108185521" H 9350 3750 50  0001 L CNN
 F 3 "" H 9350 3850 60  0001 L CNN
 F 4 "609-1046-ND" H 9350 3950 60  0001 L CNN "Digi-Key_PN"
 F 5 "54602-908LF" H 9350 4050 60  0001 L CNN "MPN"
@@ -95,10 +95,10 @@ F 12 "Active" H 9350 4750 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Polyfuse F2
+L lark-rescue:Polyfuse-Device F3
 U 1 1 5C55A114
 P 8300 3250
-F 0 "F2" V 8075 3250 50  0000 C CNN
+F 0 "F3" V 8075 3250 50  0000 C CNN
 F 1 "1.25A/16V" V 8166 3250 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 8350 3050 50  0001 L CNN
 F 3 "~" H 8300 3250 50  0001 C CNN
@@ -107,7 +107,7 @@ F 4 "1812L125/16DR " V 8300 3250 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R27
+L lark-rescue:R-Device R27
 U 1 1 5C55A24F
 P 1650 2350
 F 0 "R27" V 1443 2350 50  0000 C CNN
@@ -119,7 +119,7 @@ F 4 "RC0805FR-07470RL" V 1650 2350 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R28
+L lark-rescue:R-Device R28
 U 1 1 5C55A29E
 P 1650 2700
 F 0 "R28" V 1443 2700 50  0000 C CNN
@@ -131,7 +131,7 @@ F 4 "RC0805FR-07470RL" V 1650 2700 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J9
+L lark-rescue:Conn_01x04-Connector_Generic J9
 U 1 1 5C55B4E7
 P 5700 6000
 F 0 "J9" H 5780 5992 50  0000 L CNN
@@ -142,9 +142,11 @@ F 3 "~" H 5700 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Barrel-Audio-Connectors:SJ1-3523N CON1
+L lark-rescue:SJ1-3523N-dk_Barrel-Audio-Connectors CON1
 U 1 1 5C55B74E
 P 5600 6900
+AR Path="/5C55B74E" Ref="CON1"  Part="1" 
+AR Path="/5C549AF9/5C55B74E" Ref="CON1"  Part="1" 
 F 0 "CON1" H 5273 6953 60  0000 R CNN
 F 1 "SJ1-3523N" H 5273 6847 60  0000 R CNN
 F 2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" H 5800 7100 60  0001 L CNN
@@ -177,7 +179,7 @@ Wire Wire Line
 	5050 5900 5500 5900
 NoConn ~ 5500 6800
 $Comp
-L power:GND #PWR050
+L lark-rescue:GND-power #PWR050
 U 1 1 5C55C2EC
 P 3400 7300
 F 0 "#PWR050" H 3400 7050 50  0001 C CNN
@@ -202,7 +204,7 @@ Wire Wire Line
 	3950 7200 3950 7100
 Connection ~ 3750 7200
 $Comp
-L Device:C C41
+L lark-rescue:C-Device C41
 U 1 1 5C55CA57
 P 6000 1850
 F 0 "C41" H 6115 1896 50  0000 L CNN
@@ -214,7 +216,7 @@ F 4 "885012207128" H 6000 1850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C40
+L lark-rescue:C-Device C40
 U 1 1 5C55CA9D
 P 3600 1850
 F 0 "C40" H 3715 1896 50  0000 L CNN
@@ -226,7 +228,7 @@ F 4 "885012207128" H 3600 1850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C39
+L lark-rescue:C-Device C39
 U 1 1 5C55CAEA
 P 5250 1000
 F 0 "C39" H 5365 1046 50  0000 L CNN
@@ -238,7 +240,7 @@ F 4 "885012207128" H 5250 1000 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR043
+L lark-rescue:GND-power #PWR043
 U 1 1 5C55CC71
 P 5250 1250
 F 0 "#PWR043" H 5250 1000 50  0001 C CNN
@@ -249,7 +251,7 @@ F 3 "" H 5250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C42
+L lark-rescue:C-Device C42
 U 1 1 5C55CCBE
 P 6400 2200
 F 0 "C42" V 6148 2200 50  0000 C CNN
@@ -261,7 +263,7 @@ F 4 "885012207128" V 6400 2200 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C43
+L lark-rescue:C-Device C43
 U 1 1 5C55CF99
 P 6400 2600
 F 0 "C43" V 6148 2600 50  0000 C CNN
@@ -273,10 +275,10 @@ F 4 "885012207128" V 6400 2600 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Polyfuse F1
+L lark-rescue:Polyfuse-Device F2
 U 1 1 5C55DC01
 P 8300 1750
-F 0 "F1" V 8075 1750 50  0000 C CNN
+F 0 "F2" V 8075 1750 50  0000 C CNN
 F 1 "1.25A/16V" V 8166 1750 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 8350 1550 50  0001 L CNN
 F 3 "~" H 8300 1750 50  0001 C CNN
@@ -285,7 +287,7 @@ F 4 "1812L125/16DR " V 8300 1750 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+12V #PWR044
+L lark-rescue:+12V-power #PWR044
 U 1 1 5C55DEDC
 P 8000 1450
 F 0 "#PWR044" H 8000 1300 50  0001 C CNN
@@ -322,80 +324,17 @@ Wire Wire Line
 Connection ~ 8650 3250
 Wire Wire Line
 	8650 3250 8750 3250
-$Comp
-L Connector_Generic:Conn_01x05 J6
-U 1 1 5C55F24D
-P 2550 2050
-F 0 "J6" V 2516 1762 50  0000 R CNN
-F 1 "UART1" V 2425 1762 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2550 2050 50  0001 C CNN
-F 3 "~" H 2550 2050 50  0001 C CNN
-	1    2550 2050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R29
-U 1 1 5C55F619
-P 1650 3050
-F 0 "R29" V 1443 3050 50  0000 C CNN
-F 1 "470R" V 1534 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 3050 50  0001 C CNN
-F 3 "~" H 1650 3050 50  0001 C CNN
-F 4 "RC0805FR-07470RL" V 1650 3050 50  0001 C CNN "MPN"
-	1    1650 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R30
-U 1 1 5C55F6A5
-P 1650 3400
-F 0 "R30" V 1443 3400 50  0000 C CNN
-F 1 "470R" V 1534 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 3400 50  0001 C CNN
-F 3 "~" H 1650 3400 50  0001 C CNN
-F 4 "RC0805FR-07470RL" V 1650 3400 50  0001 C CNN "MPN"
-	1    1650 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1800 2350 2350 2350
 Wire Wire Line
 	2350 2350 2350 2250
-Wire Wire Line
-	1800 2700 2450 2700
-Wire Wire Line
-	2450 2700 2450 2250
-Wire Wire Line
-	1800 3050 2550 3050
-Wire Wire Line
-	2550 3050 2550 2250
-Wire Wire Line
-	1800 3400 2650 3400
-Wire Wire Line
-	2650 3400 2650 2250
-Wire Wire Line
-	2450 2700 4000 2700
-Connection ~ 2450 2700
 Wire Wire Line
 	4000 3100 2350 3100
 Wire Wire Line
 	2350 3100 2350 2350
 Connection ~ 2350 2350
 $Comp
-L power:GND #PWR045
-U 1 1 5C5627B3
-P 2750 2400
-F 0 "#PWR045" H 2750 2150 50  0001 C CNN
-F 1 "GND" H 2755 2227 50  0000 C CNN
-F 2 "" H 2750 2400 50  0001 C CNN
-F 3 "" H 2750 2400 50  0001 C CNN
-	1    2750 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 2250 2750 2400
-$Comp
-L Device:R R31
+L lark-rescue:R-Device R31
 U 1 1 5C56310B
 P 1650 3750
 F 0 "R31" V 1443 3750 50  0000 C CNN
@@ -407,7 +346,7 @@ F 4 "RC0805FR-07470RL" V 1650 3750 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R32
+L lark-rescue:R-Device R32
 U 1 1 5C5631FD
 P 1650 4100
 F 0 "R32" V 1443 4100 50  0000 C CNN
@@ -435,10 +374,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 4100 1300 4100
 Wire Wire Line
-	1300 3400 1500 3400
-Wire Wire Line
-	1500 3050 1300 3050
-Wire Wire Line
 	1300 2700 1500 2700
 Wire Wire Line
 	1500 2350 1300 2350
@@ -449,7 +384,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 850  4800 1400
 $Comp
-L power:VDD #PWR042
+L lark-rescue:VDD-power #PWR042
 U 1 1 5C56DC3F
 P 4800 850
 F 0 "#PWR042" H 4800 700 50  0001 C CNN
@@ -461,7 +396,7 @@ F 3 "" H 4800 850 50  0001 C CNN
 $EndComp
 Connection ~ 4800 850 
 $Comp
-L power:GND #PWR046
+L lark-rescue:GND-power #PWR046
 U 1 1 5C56DCDC
 P 4800 4000
 F 0 "#PWR046" H 4800 3750 50  0001 C CNN
@@ -571,7 +506,7 @@ Wire Wire Line
 	4600 6400 4950 6400
 NoConn ~ 3550 7100
 $Comp
-L power:+5V #PWR047
+L lark-rescue:+5V-power #PWR047
 U 1 1 5C5A9040
 P 3400 4800
 F 0 "#PWR047" H 3400 4650 50  0001 C CNN
@@ -587,7 +522,7 @@ Connection ~ 3400 4850
 Wire Wire Line
 	3400 4850 3400 5300
 $Comp
-L Device:C C44
+L lark-rescue:C-Device C44
 U 1 1 5C5B142F
 P 3050 5100
 F 0 "C44" H 3165 5146 50  0000 L CNN
@@ -596,30 +531,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 4950 50  
 F 3 "~" H 3050 5100 50  0001 C CNN
 F 4 "885012207128" H 3050 5100 50  0001 C CNN "MPN"
 	1    3050 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C45
-U 1 1 5C5B14AD
-P 4050 5100
-F 0 "C45" H 4165 5146 50  0000 L CNN
-F 1 "100n" H 4165 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4950 50  0001 C CNN
-F 3 "~" H 4050 5100 50  0001 C CNN
-F 4 "885012207128" H 4050 5100 50  0001 C CNN "MPN"
-	1    4050 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C46
-U 1 1 5C5BC765
-P 4500 5100
-F 0 "C46" H 4618 5146 50  0000 L CNN
-F 1 "470u" H 4618 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 4538 4950 50  0001 C CNN
-F 3 "~" H 4500 5100 50  0001 C CNN
-F 4 "493-16063-1-ND" H 4500 5100 50  0001 C CNN "MPN"
-	1    4500 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -640,24 +551,19 @@ Wire Wire Line
 	3900 4850 4050 4850
 Wire Wire Line
 	4050 4950 4050 4850
-Connection ~ 4050 4850
-Wire Wire Line
-	4500 4850 4500 4950
-Wire Wire Line
-	4050 4850 4500 4850
 $Comp
-L power:GND #PWR049
+L lark-rescue:GND-power #PWR049
 U 1 1 5C5EF347
-P 4500 5400
-F 0 "#PWR049" H 4500 5150 50  0001 C CNN
-F 1 "GND" H 4505 5227 50  0000 C CNN
-F 2 "" H 4500 5400 50  0001 C CNN
-F 3 "" H 4500 5400 50  0001 C CNN
-	1    4500 5400
+P 4050 5350
+F 0 "#PWR049" H 4050 5100 50  0001 C CNN
+F 1 "GND" H 4055 5177 50  0000 C CNN
+F 2 "" H 4050 5350 50  0001 C CNN
+F 3 "" H 4050 5350 50  0001 C CNN
+	1    4050 5350
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L lark-rescue:GND-power #PWR048
 U 1 1 5C5EF3AE
 P 3050 5350
 F 0 "#PWR048" H 3050 5100 50  0001 C CNN
@@ -668,18 +574,11 @@ F 3 "" H 3050 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 5400 4500 5350
-Wire Wire Line
 	4050 5250 4050 5350
-Wire Wire Line
-	4050 5350 4500 5350
-Connection ~ 4500 5350
-Wire Wire Line
-	4500 5350 4500 5250
 Wire Wire Line
 	3050 5250 3050 5350
 $Comp
-L Device:C C47
+L lark-rescue:C-Device C47
 U 1 1 5C5FA3E9
 P 2450 5900
 F 0 "C47" V 2198 5900 50  0000 C CNN
@@ -691,7 +590,7 @@ F 4 "885012207102" V 2450 5900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C48
+L lark-rescue:C-Device C48
 U 1 1 5C5FA49A
 P 1900 6200
 F 0 "C48" V 1648 6200 50  0000 C CNN
@@ -715,7 +614,7 @@ Wire Wire Line
 	2750 6500 2750 6350
 Connection ~ 2750 6350
 $Comp
-L Device:C C49
+L lark-rescue:C-Device C49
 U 1 1 5C605E58
 P 2650 6900
 F 0 "C49" H 2765 6946 50  0000 L CNN
@@ -735,7 +634,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 7200 3400 7200
 $Comp
-L Device:R R33
+L lark-rescue:R-Device R33
 U 1 1 5C617464
 P 1250 5900
 F 0 "R33" V 1043 5900 50  0000 C CNN
@@ -747,7 +646,7 @@ F 4 "RC0805FR-0710KL" V 1250 5900 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R34
+L lark-rescue:R-Device R34
 U 1 1 5C617539
 P 1250 6200
 F 0 "R34" V 1043 6200 50  0000 C CNN
@@ -759,7 +658,7 @@ F 4 "RC0805FR-0710KL" V 1250 6200 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R35
+L lark-rescue:R-Device R35
 U 1 1 5C6175DA
 P 1600 6350
 F 0 "R35" H 1670 6396 50  0000 L CNN
@@ -771,7 +670,7 @@ F 4 "RC0805FR-071KL" H 1600 6350 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R36
+L lark-rescue:R-Device R36
 U 1 1 5C6176D6
 P 2200 6500
 F 0 "R36" H 2270 6546 50  0000 L CNN
@@ -817,4 +716,18 @@ Wire Wire Line
 Wire Wire Line
 	5200 7000 4750 7000
 NoConn ~ 5200 6800
+$Comp
+L lark-rescue:C-Device C45
+U 1 1 5C5B14AD
+P 4050 5100
+F 0 "C45" H 4165 5146 50  0000 L CNN
+F 1 "100n" H 4165 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4950 50  0001 C CNN
+F 3 "~" H 4050 5100 50  0001 C CNN
+F 4 "885012207128" H 4050 5100 50  0001 C CNN "MPN"
+	1    4050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2700 4000 2700
 $EndSCHEMATC
